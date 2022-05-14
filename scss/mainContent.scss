@@ -1,0 +1,62 @@
+.aireAcondicionado, .desktop, .notebook, .proximamente, .proximamente2, .proximamente3 {
+    border: none;
+}
+.mainIndex {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+        "aireAcondicionado"
+        "desktop"
+        "notebook"
+        "proximamente"
+        "proximamente2"
+        "proximamente3"
+    ;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+    .aireAcondicionado {
+        grid-area: aireAcondicionado;    
+    }
+    .desktop {
+        grid-area: desktop;
+    }
+    .notebook {
+        grid-area: notebook;
+    }
+    .proximamente {
+        grid-area: proximamente;
+    }
+    .proximamente2 {
+        grid-area: proximamente2;
+    }
+    .proximamente3 {
+        grid-area: proximamente3;
+    }
+
+}
+.producto {
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 1.5rem;  
+    background-color: #f8f8f873; 
+    box-shadow: 3px 3px 5px  #b8b8b8;  
+
+    .parrafoProducto {
+        color: $color-texto-gral;
+        font-size: 1.2rem;
+    }
+    
+    .imagenes {
+        height: 16rem;
+        width: 16rem;
+    }
+}
+
+

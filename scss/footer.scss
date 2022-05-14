@@ -1,0 +1,25 @@
+/*+++++++++Estilos Footer Index Mobile+++++++++++*/
+footer {
+    
+    grid-area: footer;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    position:fixed;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    justify-items: center;
+    align-items: center;
+    left:0px;
+    bottom:0px;
+    height: 45px;
+    width:100%;
+    background-color: #cacacaee;
+   
+    section {
+       flex-wrap: wrap;
+       display: flex;
+       justify-content: space-around;
+       
+    }
+}
+

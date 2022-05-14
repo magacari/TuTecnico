@@ -1,0 +1,76 @@
+.headerIndex {
+    /*Estilos de area wrapper general*/
+    grid-area: header;
+    /*Estilos custom de seccion*/
+    justify-content: space-around;
+    align-items: center;
+    display: grid;
+    grid-template-columns:min-content;
+    grid-template-rows:min-content;
+    padding: 10px;
+    grid-template-areas:
+        "sectionTecnico sectionPresentacion"
+        "sectionParrafo sectionParrafo"
+        "sectionFlechas sectionFlechas"
+        "sectionSeleccionDispositivo sectionSeleccionDispositivo"        
+    ;
+    .sectionTecnico{
+        
+        grid-area: sectionTecnico;
+
+        .tecnico {
+            height: 25rem;
+            width: 14rem;
+        }
+        
+    }
+    .sectionPresentacion {
+        color: $color-texto-gral;
+        font-family: 'Fredoka One', sans-serif;
+        grid-area: sectionPresentacion;
+        font-size: 0.8rem;
+        box-sizing: border-box;
+        text-shadow: 2px 2px 3.5px $color-sombras-index;
+    }
+    .sectionParrafo{
+        grid-area: sectionParrafo;
+        color: $color-texto-gral;
+        font-family: 'Fredoka One', sans-serif;
+        font-size: 1.5rem;
+        box-sizing: border-box;
+        text-shadow: 2px 2px 3.5px $color-sombras-index; 
+
+        #bottom{
+            color: $color-texto-gral;
+            font-size: 2rem;
+            }
+    }
+
+}
+
+
+.sectionFlechas{
+    
+    grid-area: sectionFlechas;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-shadow: 4px 4px 7px $color-sombras-index;
+    
+}
+
+.botonStart { 
+    display: none;
+    
+}
+
+.seleccionDeDispositivo {
+    grid-area: sectionSeleccionDispositivo;
+    color: $color-texto-gral;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    text-shadow: 2px 2px 3.5px $color-sombras-index;
+    
+}
+
