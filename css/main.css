@@ -17,6 +17,10 @@ nav {
 .navbar .navbar-expand-lg .navbar-light .bg-light {
   grid-area: navNotebook; }
 
+/*++++++++++++++Estilos Nav pcDesktop++++++++++++*/
+.navbar .navbar-expand-lg .navbar-light .bg-light {
+  grid-area: navDesktop; }
+
 /*++++++++++++++++Estilos Header Index+++++++++++++++++*/
 .headerIndex {
   /*Estilos de area wrapper general*/
@@ -82,7 +86,7 @@ nav {
   .headerAire .esquemaAire {
     padding: 0.5rem;
     margin: 1rem;
-    box-shadow: 3px 2px 7px #c46a04;
+    box-shadow: 3px 2px 7px #c36a04;
     background-color: #f0f8ffe5;
     display: flex;
     justify-content: center;
@@ -110,7 +114,7 @@ nav {
   .headerNotebook .esquemaNotebook {
     padding: 0.5rem;
     margin: 1rem;
-    box-shadow: 3px 2px 7px #ff000083;
+    box-shadow: 3px 2px 7px #ff000063;
     background-color: #f0f8ffe5;
     display: flex;
     justify-content: center;
@@ -123,6 +127,34 @@ nav {
     .headerNotebook .esquemaNotebook .partesNotebook {
       font-size: 0.9rem; }
     .headerNotebook .esquemaNotebook .videoHeaderNotebook {
+      height: 9rem;
+      width: 16rem; }
+
+/*++++++++++++++ Estilos Header pcDesktop +++++++++++++++*/
+.headerDesktop {
+  grid-area: headerDesktop; }
+  .headerDesktop .tituloDesktop {
+    color: #ffffffec;
+    text-shadow: 3px 3px 7px #594bdb;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 15px; }
+  .headerDesktop .esquemaDesktop {
+    padding: 0.5rem;
+    margin: 1rem;
+    box-shadow: 3px 2px 7px #68e1ffee;
+    background-color: #f0f8ffe5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap; }
+    .headerDesktop .esquemaDesktop .subtituloDesktop {
+      color: #000000;
+      text-shadow: 3px 3px 7px #594bdb;
+      font-size: 1.5rem; }
+    .headerDesktop .esquemaDesktop .partesDesktop {
+      font-size: 0.9rem; }
+    .headerDesktop .esquemaDesktop .videoHeaderDesktop {
       height: 9rem;
       width: 16rem; }
 
@@ -155,6 +187,14 @@ body {
 .bodyNotebook {
   background-color: #000000;
   background-image: url(../public/image/fondoNotebook2.png);
+  background-repeat: repeat;
+  background-size: 26rem;
+  justify-content: center; }
+
+/*+++++++++++++Estilos body pcDesktop+++++++++++++++*/
+.bodyDesktop {
+  background-color: #000000;
+  background-image: url(../public/image/fondoPcGamer.png);
   background-repeat: repeat;
   background-size: 26rem;
   justify-content: center; }
@@ -206,7 +246,7 @@ body {
   .mainAire .fallasAire {
     margin: 1rem;
     padding: 0.5rem;
-    box-shadow: 3px 3px 7px #7488e2;
+    box-shadow: 3px 3px 7px #c36a04;
     background-color: #f0f8ffe5; }
     .mainAire .fallasAire .partesAire {
       font-size: 1rem; }
@@ -281,7 +321,7 @@ body {
   .mainNotebook .fallasNotebook {
     margin: 1rem;
     padding: 0.5rem;
-    box-shadow: 3px 3px 7px #2bf385;
+    box-shadow: 3px 3px 7px #ff000063;
     background-color: #f0f8ffe5; }
     .mainNotebook .fallasNotebook .partesNotebook {
       font-size: 1rem; }
@@ -290,6 +330,11 @@ body {
       font-size: 2rem;
       color: #000000;
       text-shadow: 3px 3px 7px #ff0000; }
+    .mainNotebook .fallasNotebook .pMarcas {
+      font-size: 1rem;
+      margin-bottom: 0.5rem; }
+      .mainNotebook .fallasNotebook .pMarcas p {
+        margin-bottom: 0rem; }
   .mainNotebook .sectionFallasNotebook {
     flex-wrap: wrap;
     justify-content: center;
@@ -336,6 +381,81 @@ body {
     padding: 0.5rem;
     margin: 0.5rem; }
   .mainNotebook .botonNext {
+    padding: 0.5rem;
+    margin: 2rem;
+    height: 10rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+/*++++++++++++++Estilos Main pcDesktop++++++++++++*/
+.mainDesktop {
+  grid-area: mainDesktop; }
+  .mainDesktop .fallasDesktop {
+    margin: 1rem;
+    padding: 0.5rem;
+    box-shadow: 3px 3px 7px #68e1ffee;
+    background-color: #f0f8ffe5; }
+    .mainDesktop .fallasDesktop .partesDesktop {
+      font-size: 1rem; }
+    .mainDesktop .fallasDesktop .subtituloMainDesktop {
+      text-align: center;
+      font-size: 2rem;
+      color: #000000;
+      text-shadow: 3px 3px 7px #594bdb; }
+    .mainDesktop .fallasDesktop .pMarcas {
+      font-size: 1rem;
+      margin-bottom: 0.5rem; }
+      .mainDesktop .fallasDesktop .pMarcas p {
+        margin-bottom: 0rem; }
+  .mainDesktop .sectionFallasDesktop {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: grid;
+    grid-template-areas: "divFalla1Pc divFalla2Pc" "divFalla3Pc divFalla4Pc" "divFalla5Pc divFalla6Pc"; }
+    .mainDesktop .sectionFallasDesktop div {
+      justify-content: center;
+      align-content: center;
+      padding: 0.5rem;
+      margin: 0.5rem;
+      background-color: #f8f8f89c;
+      box-shadow: 3px 2px 15px #302d2a; }
+      .mainDesktop .sectionFallasDesktop div .imagenFallaDesktop {
+        padding: 0.25rem;
+        margin: 0.25rem;
+        width: 5.8rem;
+        height: 5.8rem;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center; }
+      .mainDesktop .sectionFallasDesktop div .textAreaDesktop {
+        height: 7rem;
+        width: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .mainDesktop .sectionFallasDesktop div .h3Falla {
+        font-size: 1rem; }
+    .mainDesktop .sectionFallasDesktop .divFalla1Pc {
+      grid-area: divFalla1Pc; }
+    .mainDesktop .sectionFallasDesktop .divFalla2Pc {
+      grid-area: divFalla2Pc; }
+    .mainDesktop .sectionFallasDesktop .divFalla3Pc {
+      grid-area: divFalla3Pc; }
+    .mainDesktop .sectionFallasDesktop .divFalla4Pc {
+      grid-area: divFalla4Pc; }
+    .mainDesktop .sectionFallasDesktop .divFalla5Pc {
+      grid-area: divFalla5Pc; }
+    .mainDesktop .sectionFallasDesktop .divFalla6Pc {
+      grid-area: divFalla6Pc; }
+  .mainDesktop .divFalla7Pc {
+    grid-area: divFalla7Pc;
+    padding: 0.5rem;
+    margin: 0.5rem; }
+  .mainDesktop .botonNext {
     padding: 0.5rem;
     margin: 2rem;
     height: 10rem;

@@ -12,7 +12,7 @@
     
     <!--link a mi css-->
 
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/main.css">
 
     <!--Titulo de pagina-->
 
@@ -29,6 +29,8 @@
 <body class="bodyDesktop">
     
     <!--Inicio navegador principal-->
+    
+<div class="contenedorDesktop">
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -62,9 +64,8 @@
                 </form>
             </div>
         </div>
-          </nav>
+    </nav>
           
-    <div class="contenedorDesktop">
           <!--Inicio Header-->
           
         <header class="headerDesktop">
@@ -81,11 +82,11 @@
                     </div>
                     
                     <div>
-                        <h4 class="partesDesktop">Primero tenemos que reconocer todos los componentes de una PC, aquí les dejo un video explicativo de las partes escenciales de una computadora.</h4>>
+                        <h4 class="partesDesktop">Primero tenemos que reconocer todos los componentes de una PC, aquí les dejo un video explicativo de las partes escenciales de una computadora.</h4>
                     </div>
 
                     <div>
-                        <iframe width="500" height="255" src="https://www.youtube.com/embed/2Nx4Pwl_0X8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="videoHeaderDesktop" width="500" height="255" src="https://www.youtube.com/embed/2Nx4Pwl_0X8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </section>
@@ -96,14 +97,15 @@
         <main class="mainDesktop">
             <section>
                 
-                    <div class="fallasDesktop">
+                <div class="fallasDesktop">
+
                     <h2 class="partesDesktop">Muy bien!. Ahora necesitamos saber la falla que está teniendo su PC.</h2>
         
                     <h2 class="subtituloMainDesktop">Posibles fallas</h2> 
         
                     <div>
                         <p class="pMarcas">Selecciona la marca de tu equipo</p>
-                            <select class="pMarcas" name="Marcas">
+                            <select name="Marcas">
                                 <option value="A">Exo</option>
                                 <option value="B">Compaq</option>
                                 <option value="C">HP</option>
@@ -112,54 +114,55 @@
                             </select>
                     </div>
         
-                    <section class="sectionFallas">
-                        <div class="seleccionFallasDesktop">
+                    <section class="sectionFallasDesktop">
+
+                        <div class="divFalla1Pc">
         
                             <h3 class="h3Falla">No enciende</h3>   
-                            <img class="imagenAireGoteando" src="../public/image/Pc escritorio no enciende.png" alt="Foto PC no enciende">    
+                            <img class="imagenFallaDesktop" src="../public/image/Pc escritorio no enciende.png" alt="Foto PC no enciende">    
                             <input class="inputFalla" type="checkbox" name="acepta" value="1">
                         </div>
         
-                        <div class="seleccionFallasDesktop">
+                        <div class="divFalla2Pc">
         
                             <h3 class="h3Falla">Anda lento</h3>   
-                            <img class="imagenAireGoteando" src="../public/image/Proximamente.png" alt="proximamente">    
+                            <img class="imagenFallaDesktop" src="../public/image/Proximamente.png" alt="proximamente">    
                             <input class="inputFalla" type="checkbox" name="acepta" value="1">
                         </div>
         
-                        <div class="seleccionFallasDesktop">
+                        <div class="divFalla3Pc">
         
                             <h3 class="h3Falla">Da pantalla azul</h3>   
-                            <img class="imagenAireGoteando" src="../public/image/Proximamente.png" alt="proximamente">    
+                            <img class="imagenFallaDesktop" src="../public/image/Proximamente.png" alt="proximamente">    
                             <input class="inputFalla" type="checkbox" name="acepta" value="1">
                         </div>
         
-                        <div class="seleccionFallasDesktop">
+                        <div class="divFalla4Pc">
         
                             <h3 class="h3Falla">Hace Ruido</h3>   
-                            <img class="imagenAireGoteando" src="../public/image/Proximamente.png" alt="proximamente">    
+                            <img class="imagenFallaDesktop" src="../public/image/Proximamente.png" alt="proximamente">    
                             <input class="inputFalla" type="checkbox" name="acepta" value="1">
                         </div>
         
-                        <div class="seleccionFallasDesktop">
+                        <div class="divFalla5Pc">
         
                             <h3 class="h3Falla">Se calienta</h3>   
-                            <img class="imagenAireGoteando" src="../public/image/Proximamente.png" alt="proximamente">    
+                            <img class="imagenFallaDesktop" src="../public/image/Proximamente.png" alt="proximamente">    
                             <input class="inputFalla" type="checkbox" name="acepta" value="1">
                         </div>
         
-                        <div class="seleccionFallasDesktop">
+                        <div class="divFalla6Pc">
         
                             <h3 class="h3Falla">proximamente</h3>   
-                            <img class="imagenAireGoteando" src="../public/image/Proximamente.png" alt="proximamente">    
+                            <img class="imagenFallaDesktop" src="../public/image/Proximamente.png" alt="proximamente">    
                             <input class="inputFalla" type="checkbox" name="acepta" value="1">
                         </div>
         
+                    </section>
                         
-                        <div>
-
+                        <div class="divFalla7Pc">
                                 <p class="pMarcas">Otro:</p>
-                            <textarea type="comentario" id="" cols="60" rows="10" placeholder="Ingrese su falla aquí"></textarea>  
+                            <textarea class="textAreaDesktop" type="comentario" cols="30" rows="5" placeholder="Ingrese su falla aquí"></textarea>  
 
                         </div> 
 
@@ -169,7 +172,6 @@
                         
                                     
                     </div>   
-                </section>
             </section>
         </main>
     

@@ -71,7 +71,7 @@
     
         margin: 1rem;
         padding: 0.5rem;
-        box-shadow: 3px 3px 7px #7488e2; 
+        box-shadow: 3px 3px 7px $color-sombras-cuadros-aire; 
         background-color: #f0f8ffe5;
         
             .partesAire {
@@ -184,7 +184,7 @@
     
         margin: 1rem;
         padding: 0.5rem;
-        box-shadow: 3px 3px 7px #2bf385; 
+        box-shadow: 3px 3px 7px $color-sombras-cuadros-notebook; 
         background-color: #f0f8ffe5;
 
             .partesNotebook {
@@ -197,6 +197,14 @@
                 color: $color-texto-secundario;
                 text-shadow: 3px 3px 7px $color-sombras-notebook;
             }
+            .pMarcas {
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+                
+                    p{
+                        margin-bottom: 0rem;
+              }
+         }
     }
     
     .sectionFallasNotebook {
@@ -279,4 +287,115 @@
 }
 
  
+/*++++++++++++++Estilos Main pcDesktop++++++++++++*/
+.mainDesktop {
+
+    grid-area: mainDesktop;
+    
+    
+    .fallasDesktop {
+    
+        margin: 1rem;
+        padding: 0.5rem;
+        box-shadow: 3px 3px 7px $color-sombras-cuadros-pcdesktop; 
+        background-color: #f0f8ffe5;
+
+            .partesDesktop {
+                font-size: 1rem;
+            }
+
+            .subtituloMainDesktop {
+                text-align: center;
+                font-size: 2rem;
+                color: $color-texto-secundario;
+                text-shadow: 3px 3px 7px $color-sombras-pcdesktop;
+            }
+            .pMarcas {
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+                
+                    p{
+                        margin-bottom: 0rem;
+              }
+         }
+    }
+    
+    .sectionFallasDesktop {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: grid;
+        grid-template-areas: 
+        "divFalla1Pc divFalla2Pc"
+        "divFalla3Pc divFalla4Pc"
+        "divFalla5Pc divFalla6Pc";
+
+        div {
+               
+            justify-content: center;
+            align-content: center;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            background-color: #f8f8f89c; 
+            box-shadow: 3px 2px 15px #302d2a;   
+            
+            
+                .imagenFallaDesktop { 
+                    padding: 0.25rem;
+                    margin: 0.25rem;
+                    width: 5.8rem;
+                    height: 5.8rem;
+                    flex-wrap: wrap;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .textAreaDesktop{
+                    height: 7rem;
+                    width: 7rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .h3Falla{
+                    font-size: 1rem;
+                }
+        }
+
+        .divFalla1Pc{
+            grid-area: divFalla1Pc;
+        }
+        .divFalla2Pc{
+            grid-area: divFalla2Pc;
+        }
+        .divFalla3Pc{
+            grid-area: divFalla3Pc;
+        }
+        .divFalla4Pc{
+            grid-area: divFalla4Pc;
+        }
+        .divFalla5Pc{
+            grid-area: divFalla5Pc;
+        }
+        .divFalla6Pc{
+            grid-area: divFalla6Pc;
+        }
+    }
+    
+    .divFalla7Pc{
+        grid-area: divFalla7Pc;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    .botonNext {
+        padding: 0.5rem;
+        margin: 2rem;
+        height: 10rem;
+        width: 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 

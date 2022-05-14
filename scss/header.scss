@@ -92,7 +92,7 @@
         .esquemaAire {
             padding: 0.5rem;
             margin: 1rem;
-            box-shadow: 3px 2px 7px #c46a04; 
+            box-shadow: 3px 2px 7px $color-sombras-cuadros-aire; 
             background-color: #f0f8ffe5;
             display: flex;
             justify-content: center;
@@ -134,7 +134,7 @@
     .esquemaNotebook {
         padding: 0.5rem;
         margin: 1rem;
-        box-shadow: 3px 2px 7px #ff000083; 
+        box-shadow: 3px 2px 7px $color-sombras-cuadros-notebook; 
         background-color: #f0f8ffe5;
         display: flex;
         justify-content: center;
@@ -159,9 +159,46 @@
     }
 }
 
+/*++++++++++++++ Estilos Header pcDesktop +++++++++++++++*/
 
+.headerDesktop {
+    grid-area: headerDesktop; 
 
+    .tituloDesktop {
+        color: $color-texto-gral;
+        text-shadow: 3px 3px 7px $color-sombras-pcdesktop;
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 15px;
+    }
 
+    .esquemaDesktop {
+        padding: 0.5rem;
+        margin: 1rem;
+        box-shadow: 3px 2px 7px $color-sombras-cuadros-pcdesktop; 
+        background-color: #f0f8ffe5;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        .subtituloDesktop {
+            color: $color-texto-secundario;
+            text-shadow: 3px 3px 7px $color-sombras-pcdesktop;
+            font-size: 1.5rem;
+                
+        }
+
+        .partesDesktop {
+            font-size: 0.9rem;
+        }
+
+        .videoHeaderDesktop{
+            height: 9rem;
+            width: 16rem;
+        }
+    }
+}
 
 
 
