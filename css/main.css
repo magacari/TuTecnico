@@ -184,9 +184,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     display: grid;
-    grid-template-areas: "divFalla1 divFalla2" "divFalla3 divFalla4" "divFalla5 divFalla6" "divFalla7 divFalla7"; }
+    grid-template-areas: "divFalla1 divFalla2" "divFalla3 divFalla4" "divFalla5 divFalla6"; }
     .mainAire .sectionFallas div {
-      display: grid;
       justify-content: center;
       align-content: center;
       padding: 0.5rem;
@@ -220,15 +219,19 @@ body {
       grid-area: divFalla5; }
     .mainAire .sectionFallas .divFalla6 {
       grid-area: divFalla6; }
-    .mainAire .sectionFallas .divFalla7 {
-      grid-area: divFalla7; }
-    .mainAire .sectionFallas .botonNext {
-      height: 12rem;
-      width: 12rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+  .mainAire .divFalla7 {
+    grid-area: divFalla7;
+    padding: 0.5rem;
+    margin: 2rem; }
+  .mainAire .botonNext {
+    padding: 0.5rem;
+    margin: 2rem;
+    height: 10rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
 
 /*+++++++++Estilos Footer Index Mobile+++++++++++*/
 footer {

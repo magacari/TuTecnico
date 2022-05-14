@@ -95,75 +95,77 @@
     }
 }
 .sectionFallas {
-    flex-wrap: wrap;
-    justify-content: center;
-    display: grid;
-    grid-template-areas: 
-    "divFalla1 divFalla2"
-    "divFalla3 divFalla4"
-    "divFalla5 divFalla6"
-    "divFalla7 divFalla7";
-    div {
-        
-        display: grid;
+        flex-wrap: wrap;
         justify-content: center;
-        align-content: center;
-        padding: 0.5rem;
-        margin: 0.5rem;
-        background-color: #f8f8f89c; 
-        box-shadow: 3px 2px 15px #302d2a;   
-        
-        
-            .imagenAireGoteando { 
-                padding: 0.25rem;
-                margin: 0.25rem;
-                width: 5.2rem;
-                height: 5.2rem;
-                flex-wrap: wrap;
-                display: flex;
-                justify-content: center;
-            }
+        display: grid;
+        grid-template-areas: 
+        "divFalla1 divFalla2"
+        "divFalla3 divFalla4"
+        "divFalla5 divFalla6";
+        div {
+            
+            
+            justify-content: center;
+            align-content: center;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            background-color: #f8f8f89c; 
+            box-shadow: 3px 2px 15px #302d2a;   
+            
+            
+                .imagenAireGoteando { 
+                    padding: 0.25rem;
+                    margin: 0.25rem;
+                    width: 5.2rem;
+                    height: 5.2rem;
+                    flex-wrap: wrap;
+                    display: flex;
+                    justify-content: center;
+                }
 
-            .textArea{
-                height: 7rem;
-                width: 7rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
+                .textArea{
+                    height: 7rem;
+                    width: 7rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+        }
+
+        .divFalla1{
+            grid-area: divFalla1;
+        }
+        .divFalla2{
+            grid-area: divFalla2;
+        }
+        .divFalla3{
+            grid-area: divFalla3;
+        }
+        .divFalla4{
+            grid-area: divFalla4;
+        }
+        .divFalla5{
+            grid-area: divFalla5;
+        }
+        .divFalla6{
+            grid-area: divFalla6;
+        }
     }
 
-    .divFalla1{
-        grid-area: divFalla1;
-    }
-    .divFalla2{
-        grid-area: divFalla2;
-    }
-    .divFalla3{
-        grid-area: divFalla3;
-    }
-    .divFalla4{
-        grid-area: divFalla4;
-    }
-    .divFalla5{
-        grid-area: divFalla5;
-    }
-    .divFalla6{
-        grid-area: divFalla6;
-    }
     .divFalla7{
         grid-area: divFalla7;
+        padding: 0.5rem;
+        margin: 2rem;
     }
-    
-
     .botonNext {
-        height: 12rem;
+        padding: 0.5rem;
+        margin: 2rem;
+        height: 10rem;
         width: 12rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-}
 }
