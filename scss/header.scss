@@ -1,3 +1,5 @@
+/*++++++++++++++++Estilos Header Index+++++++++++++++++*/
+
 .headerIndex {
     /*Estilos de area wrapper general*/
     grid-area: header;
@@ -73,4 +75,53 @@
     text-shadow: 2px 2px 3.5px $color-sombras-index;
     
 }
+
+/*++++++++++++Estilos Header aireAcondicionado+++++++++++++*/
+
+    .headerAire {
+        grid-area: headerAire; 
+
+        .tituloAire {
+            color: $color-texto-gral;
+            text-shadow: 3px 3px 7px $color-sombras-index;
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 15px;
+        }  
+        
+        .esquemaAire {
+            padding: 0.5rem;
+            margin: 1rem;
+            box-shadow: 3px 2px 7px #c46a04; 
+            background-color: #f0f8ffe5;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+
+                .subtituloAire {
+                    color: #000000;
+                    text-shadow: 3px 3px 7px #ff5e00;
+                    font-size: 1.5rem;  
+                    
+                }
+
+                .partesAire {
+                    font-size: 0.9rem;
+                    
+                }
+                .videoHeader{
+                    height: 9rem;
+                    width: 16rem;
+                }
+            
+        }
+    }
+
+
+
+
+
+
+
 

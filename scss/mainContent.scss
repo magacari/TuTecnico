@@ -1,3 +1,5 @@
+/*++++++++++++++++Estilos Main Index++++++++++++++++++*/
+
 .aireAcondicionado, .desktop, .notebook, .proximamente, .proximamente2, .proximamente3 {
     border: none;
 }
@@ -59,4 +61,109 @@
     }
 }
 
+/*+++++++++++++Estilos Main aireAcondicionado++++++++++++++*/
 
+.mainAire {
+
+    grid-area: mainAire;
+    
+
+    .fallasAire {
+    
+        margin: 1rem;
+        padding: 0.5rem;
+        box-shadow: 3px 3px 7px #7488e2; 
+        background-color: #f0f8ffe5;
+        
+            .partesAire {
+                font-size: 1rem;
+            }
+        
+            .subtituloMainAire {
+                text-align: center;
+                font-size: 2rem;
+                color: #000000;
+                text-shadow: 3px 3px 7px #ff5e00;
+        }
+
+    .pMarcas {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        p{
+            margin-bottom: 0rem;
+        }
+    }
+}
+.sectionFallas {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: grid;
+    grid-template-areas: 
+    "divFalla1 divFalla2"
+    "divFalla3 divFalla4"
+    "divFalla5 divFalla6"
+    "divFalla7 divFalla7";
+    div {
+        
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        background-color: #f8f8f89c; 
+        box-shadow: 3px 2px 15px #302d2a;   
+        
+        
+            .imagenAireGoteando { 
+                padding: 0.25rem;
+                margin: 0.25rem;
+                width: 5.2rem;
+                height: 5.2rem;
+                flex-wrap: wrap;
+                display: flex;
+                justify-content: center;
+            }
+
+            .textArea{
+                height: 7rem;
+                width: 7rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+    }
+
+    .divFalla1{
+        grid-area: divFalla1;
+    }
+    .divFalla2{
+        grid-area: divFalla2;
+    }
+    .divFalla3{
+        grid-area: divFalla3;
+    }
+    .divFalla4{
+        grid-area: divFalla4;
+    }
+    .divFalla5{
+        grid-area: divFalla5;
+    }
+    .divFalla6{
+        grid-area: divFalla6;
+    }
+    .divFalla7{
+        grid-area: divFalla7;
+    }
+    
+
+    .botonNext {
+        height: 12rem;
+        width: 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+}
