@@ -399,3 +399,22 @@
     }
 }
 
+/*++++++++++++++Estilos Main redesSociales++++++++++++*/
+
+.mainLegales{
+    color: #000000;
+
+    .legales {
+        margin: 1rem 1rem;
+        font-size: 1.5rem;
+        margin: 1.5rem;
+        box-shadow: 3px 2px 7px #1ead0b; 
+        background-color: #f0f8ff1c;
+
+        li{
+            font-size: 1rem;
+            color: $color-texto-gral;
+
+        }
+    }
+}

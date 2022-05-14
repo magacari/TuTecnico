@@ -201,5 +201,85 @@
 }
 
 
+/*++++++++++++ Estilos Header redesSociales +++++++++++++*/
 
+.tituloInfo {
+    color: #ffffff;
+    text-shadow: 3px 3px 7px #1ead0b;
+    font-size: 2rem;
+    text-align: center;
+}
+.container {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-areas: 
+    "row1"
+    "row2"
+    "row3"
+    "row4";
+    text-shadow: 1px 1px 1px #ffffff; 
+    
+    
+    .row1 {
+        background-color: #ffffff10; 
+        box-shadow: 2px 2px 5px #1ead0b96;        
+        padding: 0.5rem;
+        grid-area: row1;
+        
+        .col{
+            pad: 30px;
+    
+            .parrafoInfo{
+                
+                color: #ffffff;
+            }
+        }
+    }
+    .row2 {
+        background-color: #ffffff10; 
+        box-shadow: 2px 2px 5px #1ead0b96;       
+        padding: 0.5rem;
+        grid-area: row2;
+        margin-top: 1rem;
+        
+        .col{
+            pad: 30px;
+    
+            .parrafoInfo{
+                
+                color: #ffffff;
+            }
+        }
+    }
+    .row3 {
+        background-color: #ffffff10; 
+        box-shadow: 2px 2px 5px #1ead0b96;          
+        padding: 0.5rem;
+        grid-area: row3;
+        margin-top: 1rem;
+        .col{
+            pad: 30px;
+    
+            .parrafoInfo{
+                
+                color: #ffffff;
+            }
+        }
+    }
+    .row4 {
+        background-color: #ffffff10; 
+        box-shadow: 2px 2px 5px #1ead0b96;         
+        padding: 0.5rem;
+        grid-area: row4;
+        margin-top: 1rem;
+        .col{
+            pad: 30px;
+    
+            .parrafoInfo{
+                
+                color: #ffffff;
+            }
+        }
+    }
 
+}

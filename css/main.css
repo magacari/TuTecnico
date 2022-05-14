@@ -158,6 +158,58 @@ nav {
       height: 9rem;
       width: 16rem; }
 
+/*++++++++++++ Estilos Header redesSociales +++++++++++++*/
+.tituloInfo {
+  color: #ffffff;
+  text-shadow: 3px 3px 7px #1ead0b;
+  font-size: 2rem;
+  text-align: center; }
+
+.container {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-areas: "row1" "row2" "row3" "row4";
+  text-shadow: 1px 1px 1px #ffffff; }
+  .container .row1 {
+    background-color: #ffffff10;
+    box-shadow: 2px 2px 5px #1ead0b96;
+    padding: 0.5rem;
+    grid-area: row1; }
+    .container .row1 .col {
+      pad: 30px; }
+      .container .row1 .col .parrafoInfo {
+        color: #ffffff; }
+  .container .row2 {
+    background-color: #ffffff10;
+    box-shadow: 2px 2px 5px #1ead0b96;
+    padding: 0.5rem;
+    grid-area: row2;
+    margin-top: 1rem; }
+    .container .row2 .col {
+      pad: 30px; }
+      .container .row2 .col .parrafoInfo {
+        color: #ffffff; }
+  .container .row3 {
+    background-color: #ffffff10;
+    box-shadow: 2px 2px 5px #1ead0b96;
+    padding: 0.5rem;
+    grid-area: row3;
+    margin-top: 1rem; }
+    .container .row3 .col {
+      pad: 30px; }
+      .container .row3 .col .parrafoInfo {
+        color: #ffffff; }
+  .container .row4 {
+    background-color: #ffffff10;
+    box-shadow: 2px 2px 5px #1ead0b96;
+    padding: 0.5rem;
+    grid-area: row4;
+    margin-top: 1rem; }
+    .container .row4 .col {
+      pad: 30px; }
+      .container .row4 .col .parrafoInfo {
+        color: #ffffff; }
+
 /*++++++++++Estilos body Index++++++++++++*/
 * {
   margin: 0;
@@ -464,6 +516,19 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+
+/*++++++++++++++Estilos Main redesSociales++++++++++++*/
+.mainLegales {
+  color: #000000; }
+  .mainLegales .legales {
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    box-shadow: 3px 2px 7px #1ead0b;
+    background-color: #f0f8ff1c; }
+    .mainLegales .legales li {
+      font-size: 1rem;
+      color: #ffffffec; }
 
 /*+++++++++Estilos Footer Index Mobile+++++++++++*/
 footer {
