@@ -12,7 +12,7 @@
     
     <!--link a Css-->
 
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/main.css">
 
     <!--Titulo de pagina-->
     
@@ -31,7 +31,10 @@
 
 <body class="bodyNotebook">
 
-            <!--Inicio navegador principal-->
+    
+    <!--Inicio navegador principal-->
+
+    <div class="contenedorNotebook">
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
@@ -65,10 +68,12 @@
                     </form>  
                   </div>  
                 </div>  
-              </nav>      
-    <div class="contenedorNotebook">
-
+              </nav>     
+              
+           
+              
         <!--Inicio Header-->
+            
 
         <header class="headerNotebook">
 
@@ -84,10 +89,12 @@
                     </div>
                     
                     <div>
-                        <h4 class="partesNotebook">Primero tenemos que reconocer todos los componentes de una notebook, aquí les dejo un video explicativo de las partes escenciales de una laptop.</h4>>
+                        <h4 class="partesNotebook">Primero tenemos que reconocer todos los componentes de una notebook, aquí les dejo un video explicativo de las partes escenciales de una laptop.</h4>
                     </div>
 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Gq2xjjqWuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div>
+                        <iframe class="videoHeaderNotebook" width="500" height="255" src="https://www.youtube.com/embed/1Gq2xjjqWuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </section>
         </header>
@@ -97,11 +104,12 @@
         <main class="mainNotebook">
             <section>
                 
-                    <div class="fallasNotebook">
+                <div class="fallasNotebook">
+
                     <h2 class="partesNotebook">Muy bien!. Ahora necesitamos saber la falla que está teniendo su notebook.</h2>
-        
+            
                     <h2 class="subtituloMainNotebook">Posibles fallas</h2> 
-        
+            
                     <div>
                         <p class="pMarcas">Selecciona la marca de tu equipo</p>
                             <select class="pMarcas" name="Marcas">
@@ -110,67 +118,72 @@
                                 <option value="C">Acer</option>
                                 <option value="D">Exo</option>
                                 <option value="E">Otro</option>
-                            </select>
+                                </select>
                     </div>
-        
-                    <section class="sectionFallas">
-                        <div class="seleccionFallasNotebook">
-        
+            
+                    <section class="sectionFallasNotebook">
+
+                        <div class="divFalla1Note">
+
                             <h3 class="h3Falla">No enciende</h3>   
                             <img class="imagenNotebookNoEnciende" src="../public/image/notebook no enciende.png" alt="Foto notebook no enciende">    
                             <input class="inputFalla" type="checkbox" name="acepta" value="1">
-                        </div>
-        
-                        <div class="seleccionFallasNotebook">
-        
-                            <h3 class="h3Falla">Anda lento</h3>   
-                            <img class="imagenAireGoteando" src="../public/image/Proximamente.png" alt="proximamente">    
-                            <input class="inputFalla" type="checkbox" name="acepta" value="1">
-                        </div>
-        
-                        <div class="seleccionFallasNotebook">
-        
-                            <h3 class="h3Falla">Da pantalla azul</h3>   
-                            <img class="imagenAireGoteando" src="../public/image/Proximamente.png" alt="proximamente">    
-                            <input class="inputFalla" type="checkbox" name="acepta" value="1">
-                        </div>
-        
-                        <div class="seleccionFallasNotebook">
-        
-                            <h3 class="h3Falla">Hace ruido</h3>   
-                            <img class="imagenAireGoteando" src="../public/image/Proximamente.png" alt="proximamente">    
-                            <input class="inputFalla" type="checkbox" name="acepta" value="1">
-                        </div>
-        
-                        <div class="seleccionFallasNotebook">
-        
-                            <h3 class="h3Falla">Se calienta</h3>   
-                            <img class="imagenAireGoteando" src="../public/image/Proximamente.png" alt="proximamente">    
-                            <input class="inputFalla" type="checkbox" name="acepta" value="1">
-                        </div>
-        
-                        <div class="seleccionFallasNotebook">
-        
-                            <h3 class="h3Falla">proximamente</h3>   
-                            <img class="imagenAireGoteando" src="../public/image/Proximamente.png" alt="proximamente">    
-                            <input class="inputFalla" type="checkbox" name="acepta" value="1">
-                        </div>
-        
-                        
-                        <div>
 
-                                <p class="pMarcas">Otro:</p>
-                            <textarea type="comentario" id="" cols="60" rows="10" placeholder="Ingrese su falla aquí"></textarea>  
+                        </div>
+            
+                        <div class="divFalla2Note">
+            
+                            <h3 class="h3Falla">Anda lento</h3>   
+                            <img class="imagenNotebookNoEnciende" src="../public/image/Proximamente.png" alt="proximamente">    
+                            <input class="inputFalla" type="checkbox" name="acepta" value="1">
+
+                        </div>
+            
+                        <div class="divFalla3Note">
+            
+                            <h3 class="h3Falla">Da pantalla azul</h3>   
+                            <img class="imagenNotebookNoEnciende" src="../public/image/Proximamente.png" alt="proximamente">    
+                            <input class="inputFalla" type="checkbox" name="acepta" value="1">
+
+                        </div>
+            
+                        <div class="divFalla4Note">
+            
+                            <h3 class="h3Falla">Hace ruido</h3>   
+                            <img class="imagenNotebookNoEnciende" src="../public/image/Proximamente.png" alt="proximamente">    
+                            <input class="inputFalla" type="checkbox" name="acepta" value="1">
+                        
+                        </div>
+            
+                        <div class="divFalla5Note">
+            
+                            <h3 class="h3Falla">Se calienta</h3>   
+                            <img class="imagenNotebookNoEnciende" src="../public/image/Proximamente.png" alt="proximamente">    
+                            <input class="inputFalla" type="checkbox" name="acepta" value="1">
+                        
+                        </div>
+            
+                        <div class="divFalla6Note">
+            
+                            <h3 class="h3Falla">proximamente</h3>   
+                            <img class="imagenNotebookNoEnciende" src="../public/image/Proximamente.png" alt="proximamente">    
+                            <input class="inputFalla" type="checkbox" name="acepta" value="1">
+                        
+                        </div>
+            
+                    </section>    
+       
+                        <div class="divFalla7Note">
+
+                            <p class="pMarcas">Otro:</p>
+                            <textarea class="textAreaNote" type="comentario" id="" cols="30" rows="5" placeholder="Ingrese su falla aquí"></textarea>  
 
                         </div> 
 
 
                         <a href="https://hardzone.es/tutoriales/reparacion/ordenador-no-enciende/"target="_blank">
                         <img  class="botonNext" src="../public/image/Boton Next.png" alt="Next"></a>
-                        
-                                    
-                    </div>   
-                </section>
+                </div>   
             </section>
         </main>
     

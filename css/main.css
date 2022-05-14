@@ -13,6 +13,10 @@ nav {
 .navbar .navbar-expand-lg .navbar-light .bg-light {
   grid-area: navAire; }
 
+/*++++++++++++++Estilos Nav Notebooks++++++++++++*/
+.navbar .navbar-expand-lg .navbar-light .bg-light {
+  grid-area: navNotebook; }
+
 /*++++++++++++++++Estilos Header Index+++++++++++++++++*/
 .headerIndex {
   /*Estilos de area wrapper general*/
@@ -90,7 +94,35 @@ nav {
       font-size: 1.5rem; }
     .headerAire .esquemaAire .partesAire {
       font-size: 0.9rem; }
-    .headerAire .esquemaAire .videoHeader {
+    .headerAire .esquemaAire .videoHeaderAire {
+      height: 9rem;
+      width: 16rem; }
+
+/*++++++++++++Estilos Header notebook+++++++++++++*/
+.headerNotebook {
+  grid-area: headerNotebook; }
+  .headerNotebook .tituloNotebook {
+    color: #ffffffec;
+    text-shadow: 3px 3px 7px #ff0000;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 15px; }
+  .headerNotebook .esquemaNotebook {
+    padding: 0.5rem;
+    margin: 1rem;
+    box-shadow: 3px 2px 7px #ff000083;
+    background-color: #f0f8ffe5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap; }
+    .headerNotebook .esquemaNotebook .subtituloNotebook {
+      color: #000000;
+      text-shadow: 3px 3px 7px #ff0000;
+      font-size: 1.5rem; }
+    .headerNotebook .esquemaNotebook .partesNotebook {
+      font-size: 0.9rem; }
+    .headerNotebook .esquemaNotebook .videoHeaderNotebook {
       height: 9rem;
       width: 16rem; }
 
@@ -115,6 +147,14 @@ body {
 .bodyAires {
   background-color: #000000;
   background-image: url(../public/image/fondoAireAcondicionado2.png);
+  background-repeat: repeat;
+  background-size: 26rem;
+  justify-content: center; }
+
+/*+++++++++++++Estilos body notebook+++++++++++++++*/
+.bodyNotebook {
+  background-color: #000000;
+  background-image: url(../public/image/fondoNotebook2.png);
   background-repeat: repeat;
   background-size: 26rem;
   justify-content: center; }
@@ -207,6 +247,8 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center; }
+      .mainAire .sectionFallas div .h3Falla {
+        font-size: 1.2rem; }
     .mainAire .sectionFallas .divFalla1 {
       grid-area: divFalla1; }
     .mainAire .sectionFallas .divFalla2 {
@@ -222,8 +264,78 @@ body {
   .mainAire .divFalla7 {
     grid-area: divFalla7;
     padding: 0.5rem;
-    margin: 2rem; }
+    margin: 0.5rem; }
   .mainAire .botonNext {
+    padding: 0.5rem;
+    margin: 2rem;
+    height: 10rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+/*++++++++++++++Estilos Main Notebook++++++++++++*/
+.mainNotebook {
+  grid-area: mainNotebook; }
+  .mainNotebook .fallasNotebook {
+    margin: 1rem;
+    padding: 0.5rem;
+    box-shadow: 3px 3px 7px #2bf385;
+    background-color: #f0f8ffe5; }
+    .mainNotebook .fallasNotebook .partesNotebook {
+      font-size: 1rem; }
+    .mainNotebook .fallasNotebook .subtituloMainNotebook {
+      text-align: center;
+      font-size: 2rem;
+      color: #000000;
+      text-shadow: 3px 3px 7px #ff0000; }
+  .mainNotebook .sectionFallasNotebook {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: grid;
+    grid-template-areas: "divFalla1Note divFalla2Note" "divFalla3Note divFalla4Note" "divFalla5Note divFalla6Note"; }
+    .mainNotebook .sectionFallasNotebook div {
+      justify-content: center;
+      align-content: center;
+      padding: 0.5rem;
+      margin: 0.5rem;
+      background-color: #f8f8f89c;
+      box-shadow: 3px 2px 15px #302d2a; }
+      .mainNotebook .sectionFallasNotebook div .imagenNotebookNoEnciende {
+        padding: 0.25rem;
+        margin: 0.25rem;
+        width: 5.8rem;
+        height: 5.8rem;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center; }
+      .mainNotebook .sectionFallasNotebook div .textAreaNote {
+        height: 7rem;
+        width: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .mainNotebook .sectionFallasNotebook div .h3Falla {
+        font-size: 1rem; }
+    .mainNotebook .sectionFallasNotebook .divFalla1Note {
+      grid-area: divFalla1Note; }
+    .mainNotebook .sectionFallasNotebook .divFalla2Note {
+      grid-area: divFalla2Note; }
+    .mainNotebook .sectionFallasNotebook .divFalla3Note {
+      grid-area: divFalla3Note; }
+    .mainNotebook .sectionFallasNotebook .divFalla4Note {
+      grid-area: divFalla4Note; }
+    .mainNotebook .sectionFallasNotebook .divFalla5Note {
+      grid-area: divFalla5Note; }
+    .mainNotebook .sectionFallasNotebook .divFalla6Note {
+      grid-area: divFalla6Note; }
+  .mainNotebook .divFalla7Note {
+    grid-area: divFalla7Note;
+    padding: 0.5rem;
+    margin: 0.5rem; }
+  .mainNotebook .botonNext {
     padding: 0.5rem;
     margin: 2rem;
     height: 10rem;
@@ -256,4 +368,9 @@ footer {
 /*+++++++++++++Estilos Footer aireAcondicionado+++++++++++++++*/
 .footerAire {
   grid-area: footerAire;
+  position: fixed; }
+
+/*+++++++++++++Estilos Footer Notebook+++++++++++++++*/
+.footerNotebook {
+  grid-area: footerNotebook;
   position: fixed; }

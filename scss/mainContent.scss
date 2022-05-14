@@ -64,10 +64,9 @@
 /*+++++++++++++Estilos Main aireAcondicionado++++++++++++++*/
 
 .mainAire {
-
+    
     grid-area: mainAire;
     
-
     .fallasAire {
     
         margin: 1rem;
@@ -82,15 +81,16 @@
             .subtituloMainAire {
                 text-align: center;
                 font-size: 2rem;
-                color: #000000;
-                text-shadow: 3px 3px 7px #ff5e00;
+                color: $color-texto-secundario;
+                text-shadow: 3px 3px 7px $color-sombras-index;
         }
 
-    .pMarcas {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-        p{
-            margin-bottom: 0rem;
+            .pMarcas {
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+                
+                    p{
+                        margin-bottom: 0rem;
         }
     }
 }
@@ -102,9 +102,9 @@
         "divFalla1 divFalla2"
         "divFalla3 divFalla4"
         "divFalla5 divFalla6";
+
         div {
-            
-            
+               
             justify-content: center;
             align-content: center;
             padding: 0.5rem;
@@ -131,6 +131,10 @@
                     justify-content: center;
                     align-items: center;
                 }
+
+                .h3Falla{
+                    font-size: 1.2rem;
+                }
         }
 
         .divFalla1{
@@ -156,7 +160,7 @@
     .divFalla7{
         grid-area: divFalla7;
         padding: 0.5rem;
-        margin: 2rem;
+        margin: 0.5rem;
     }
     .botonNext {
         padding: 0.5rem;
@@ -169,3 +173,110 @@
         align-items: center;
     }
 }
+
+/*++++++++++++++Estilos Main Notebook++++++++++++*/
+.mainNotebook {
+
+    grid-area: mainNotebook;
+    
+    
+    .fallasNotebook {
+    
+        margin: 1rem;
+        padding: 0.5rem;
+        box-shadow: 3px 3px 7px #2bf385; 
+        background-color: #f0f8ffe5;
+
+            .partesNotebook {
+                font-size: 1rem;
+            }
+
+            .subtituloMainNotebook {
+                text-align: center;
+                font-size: 2rem;
+                color: $color-texto-secundario;
+                text-shadow: 3px 3px 7px $color-sombras-notebook;
+            }
+    }
+    
+    .sectionFallasNotebook {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: grid;
+        grid-template-areas: 
+        "divFalla1Note divFalla2Note"
+        "divFalla3Note divFalla4Note"
+        "divFalla5Note divFalla6Note";
+
+        div {
+               
+            justify-content: center;
+            align-content: center;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            background-color: #f8f8f89c; 
+            box-shadow: 3px 2px 15px #302d2a;   
+            
+            
+                .imagenNotebookNoEnciende { 
+                    padding: 0.25rem;
+                    margin: 0.25rem;
+                    width: 5.8rem;
+                    height: 5.8rem;
+                    flex-wrap: wrap;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .textAreaNote{
+                    height: 7rem;
+                    width: 7rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .h3Falla{
+                    font-size: 1rem;
+                }
+        }
+
+        .divFalla1Note{
+            grid-area: divFalla1Note;
+        }
+        .divFalla2Note{
+            grid-area: divFalla2Note;
+        }
+        .divFalla3Note{
+            grid-area: divFalla3Note;
+        }
+        .divFalla4Note{
+            grid-area: divFalla4Note;
+        }
+        .divFalla5Note{
+            grid-area: divFalla5Note;
+        }
+        .divFalla6Note{
+            grid-area: divFalla6Note;
+        }
+    }
+    
+    .divFalla7Note{
+        grid-area: divFalla7Note;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    .botonNext {
+        padding: 0.5rem;
+        margin: 2rem;
+        height: 10rem;
+        width: 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+ 
+
