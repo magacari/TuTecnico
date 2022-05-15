@@ -243,6 +243,82 @@ nav {
       padding-top: 3rem;
       padding-left: 4.7rem; } }
 
+/*+-+-+-+-Estilos hasta 768px-+--+-+-+-*/
+/*++++Index++++*/
+@media screen and (min-width: 1024px) {
+  .headerIndex {
+    border: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px;
+    display: grid;
+    grid-template-areas: "sectionTecnico sectionPresentacion" "sectionTecnico botonStart" "sectionParrafo sectionParrafo" "seleccionDeDispositivo seleccionDeDispositivo"; }
+    .headerIndex .sectionTecnico {
+      grid-area: sectionTecnico;
+      padding-left: 3rem; }
+      .headerIndex .sectionTecnico .tecnico {
+        height: 50rem;
+        width: 29rem; }
+    .headerIndex .sectionPresentacion {
+      grid-area: sectionPresentacion;
+      padding-top: 3rem;
+      padding-left: 2rem; }
+      .headerIndex .sectionPresentacion h1 {
+        font-size: 2.5rem; }
+    .headerIndex .sectionParrafo {
+      grid-area: sectionParrafo;
+      padding-top: 8rem;
+      padding-bottom: 2rem;
+      padding-left: 2rem; }
+      .headerIndex .sectionParrafo #bottom {
+        font-size: 3rem; }
+    .headerIndex .sectionFlechas {
+      grid-area: sectionFlechas;
+      display: none; }
+    .headerIndex .seleccionDeDispositivo {
+      grid-area: seleccionDeDispositivo;
+      padding-top: 3rem;
+      padding-left: 4.7rem;
+      font-size: 2.2rem; }
+    .headerIndex .botonStart {
+      grid-area: botonStart;
+      display: block;
+      padding-left: 3rem;
+      padding-top: 0rem; }
+      .headerIndex .botonStart img {
+        height: 15rem;
+        width: 13rem;
+        margin-top: -23rem;
+        margin-left: 5rem;
+        transition: height 1s, width 1s; }
+      .headerIndex .botonStart .botonComenzar:hover {
+        height: 19rem;
+        width: 17rem; } }
+
+@media screen and (min-width: 1750px) {
+  .headerIndex .sectionTecnico {
+    grid-area: sectionTecnico;
+    padding-left: 8rem; }
+    .headerIndex .sectionTecnico .tecnico {
+      height: 59rem;
+      width: 35rem; }
+  .headerIndex .botonStart {
+    display: block;
+    padding-left: 7rem; }
+    .headerIndex .botonStart img {
+      height: 18rem;
+      width: 15rem;
+      margin-top: -23rem;
+      margin-left: 8rem;
+      transition: height 1s, width 1s; }
+    .headerIndex .botonStart .botonComenzar:hover {
+      height: 26rem;
+      width: 22rem; }
+  .headerIndex .seleccionDeDispositivo {
+    padding-top: 3rem;
+    padding-left: 12rem;
+    font-size: 3rem; } }
+
 /*++++++++++Estilos body Index++++++++++++*/
 * {
   margin: 0;
@@ -570,35 +646,54 @@ body {
   .mainIndex {
     display: grid;
     grid-template-areas: "aireAcondicionado desktop" "notebook proximamente" "proximamente2 proximamente3";
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-    padding-bottom: 5rem; }
+    flex-direction: row;
+    justify-content: space-around;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 5fr 5fr; }
     .mainIndex .aireAcondicionado {
       grid-area: aireAcondicionado; }
-      .mainIndex .aireAcondicionado .producto {
-        padding: 1rem; }
     .mainIndex .desktop {
       grid-area: desktop; }
-      .mainIndex .desktop .producto {
-        padding: 1rem;
-        padding-bottom: 2.9rem; }
     .mainIndex .notebook {
       grid-area: notebook; }
-      .mainIndex .notebook .producto {
-        padding: 1rem; }
     .mainIndex .proximamente {
       grid-area: proximamente; }
-      .mainIndex .proximamente .producto {
-        padding: 1rem;
-        padding-bottom: 6.6rem; }
     .mainIndex .proximamente2 {
       grid-area: proximamente2; }
-      .mainIndex .proximamente2 .producto {
-        padding: 1rem; }
     .mainIndex .proximamente3 {
-      grid-area: proximamente3; }
-      .mainIndex .proximamente3 .producto {
-        padding: 1rem; } }
+      grid-area: proximamente3; } }
+
+/*+-+-+-+-Estilos hasta 1024px-+--+-+-+-*/
+/*++++Index++++*/
+@media screen and (min-width: 1024px) {
+  .mainIndex {
+    display: grid;
+    grid-template-areas: "aireAcondicionado desktop notebook" "proximamente proximamente2 proximamente3";
+    flex-direction: row;
+    justify-content: space-around;
+    grid-template-columns: 5fr 5fr 5fr;
+    grid-template-rows: 5fr 5fr 5fr; }
+    .mainIndex img {
+      transition: height 0.5s, width 0.5s; }
+    .mainIndex img:hover {
+      height: 18rem;
+      width: 18rem; }
+    .mainIndex .aireAcondicionado {
+      grid-area: aireAcondicionado; }
+    .mainIndex .desktop {
+      grid-area: desktop; }
+    .mainIndex .notebook {
+      grid-area: notebook; }
+    .mainIndex .proximamente {
+      grid-area: proximamente; }
+    .mainIndex .proximamente2 {
+      grid-area: proximamente2; }
+    .mainIndex .proximamente3 {
+      grid-area: proximamente3; } }
+
+@media screen and (min-width: 1750px) {
+  .mainIndex .producto {
+    padding: 4rem 1rem 4rem 1rem; } }
 
 /*+++++++++Estilos Footer Index Mobile+++++++++++*/
 footer {
@@ -629,3 +724,18 @@ footer {
 .footerNotebook {
   grid-area: footerNotebook;
   position: fixed; }
+
+/*-----------------Medias Queries-------------------*/
+/*+-+-+-+-Estilos hasta 1024px-+--+-+-+-*/
+/*++++Index++++*/
+@media screen and (min-width: 1024px) {
+  .footerMobile {
+    display: none; }
+  .footerEscritorio {
+    display: block;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly; }
+  footer {
+    position: relative;
+    padding: 0px; } }

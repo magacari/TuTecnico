@@ -36,3 +36,28 @@ footer {
     grid-area: footerNotebook;
     position:fixed;
 }
+
+
+/*-----------------Medias Queries-------------------*/
+
+    /*+-+-+-+-Estilos hasta 1024px-+--+-+-+-*/
+
+        /*++++Index++++*/
+@media screen and (min-width: 1024px) {
+    
+    .footerMobile {
+        display: none;
+    }
+
+    .footerEscritorio {
+        
+        display: block;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer {
+        position:relative;
+        padding: 0px;
+    }
+}

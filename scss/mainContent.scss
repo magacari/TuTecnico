@@ -420,6 +420,10 @@
 }
 
 
+
+
+
+
 /*-----------------Medias Queries-------------------*/
 
     /*+-+-+-+-Estilos hasta 768px-+--+-+-+-*/
@@ -434,52 +438,85 @@
             "notebook proximamente"
             "proximamente2 proximamente3"   
         ;
-        padding-left: 0.2rem;
-        padding-right: 0.2rem;
-        padding-bottom: 5rem;
+        flex-direction: row;
+        justify-content: space-around;
+        grid-template-columns: 5fr 5fr;
+        grid-template-rows: 5fr 5fr;
         
         .aireAcondicionado {
-            grid-area: aireAcondicionado;
-            .producto{
-                padding: 1rem;
-            }
-        
+            grid-area: aireAcondicionado;           
         }
         .desktop {
             grid-area: desktop;
+        }
+        .notebook {
+            grid-area: notebook;           
+        }
+        .proximamente {
+            grid-area: proximamente;           
+        }
+        .proximamente2 {
+            grid-area: proximamente2;            
+        }
+        .proximamente3 {
+            grid-area: proximamente3;       
+        }
+    }
+}
 
-            .producto{
-                padding: 1rem;
-                padding-bottom: 2.9rem;
+/*+-+-+-+-Estilos hasta 1024px-+--+-+-+-*/
+
+        /*++++Index++++*/
+@media screen and (min-width: 1024px) {
+    
+    .mainIndex {
+        display: grid;
+        grid-template-areas:
+            "aireAcondicionado desktop notebook"
+            "proximamente proximamente2 proximamente3"
+        ;
+        flex-direction: row;
+        justify-content: space-around;
+        grid-template-columns: 5fr 5fr 5fr;
+        grid-template-rows: 5fr 5fr 5fr;
+
+        img{
+                transition: height 0.5s, width 0.5s;
             }
+        img:hover{
+            height: 18rem;
+            width: 18rem;
+        }
+
+        .aireAcondicionado {
+            grid-area: aireAcondicionado;
+        }
+        .desktop {
+            grid-area: desktop;                        
         }
         .notebook {
             grid-area: notebook;
-            .producto{
-                padding: 1rem;
-            }
         }
         .proximamente {
-            grid-area: proximamente;
-
-            .producto{
-                padding: 1rem;
-                padding-bottom: 6.6rem;
-            }
+            grid-area: proximamente;      
         }
         .proximamente2 {
-            grid-area: proximamente2;
-            .producto{
-                padding: 1rem;
-            }
+            grid-area: proximamente2;  
         }
         .proximamente3 {
             grid-area: proximamente3;
-            .producto{
-                padding: 1rem;
-            }
         }
     
     }
 
+}
+
+@media screen and (min-width: 1750px) {
+
+    .mainIndex{
+        .producto{
+            padding: 4rem 1rem 4rem 1rem;
+            
+        }
+    }
 }
