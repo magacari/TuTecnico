@@ -36,22 +36,25 @@ nav {
   .headerIndex .sectionTecnico {
     grid-area: sectionTecnico; }
     .headerIndex .sectionTecnico .tecnico {
-      height: 25rem;
-      width: 14rem; }
+      height: 23rem;
+      width: 13rem; }
   .headerIndex .sectionPresentacion {
     color: #ffffffec;
     font-family: 'Fredoka One', sans-serif;
     grid-area: sectionPresentacion;
-    font-size: 0.8rem;
     box-sizing: border-box;
     text-shadow: 2px 2px 3.5px #ff5e00; }
+    .headerIndex .sectionPresentacion h1 {
+      font-size: 1.2rem; }
   .headerIndex .sectionParrafo {
     grid-area: sectionParrafo;
     color: #ffffffec;
     font-family: 'Fredoka One', sans-serif;
     font-size: 1.5rem;
     box-sizing: border-box;
-    text-shadow: 2px 2px 3.5px #ff5e00; }
+    text-shadow: 2px 2px 3.5px #ff5e00;
+    padding-top: 6rem;
+    padding-left: 1rem; }
     .headerIndex .sectionParrafo #bottom {
       color: #ffffffec;
       font-size: 2rem; }
@@ -59,6 +62,7 @@ nav {
 .sectionFlechas {
   grid-area: sectionFlechas;
   display: block;
+  padding-top: 2rem;
   margin: 0 auto;
   box-sizing: border-box;
   text-shadow: 4px 4px 7px #ff5e00; }
@@ -209,6 +213,35 @@ nav {
       pad: 30px; }
       .container .row4 .col .parrafoInfo {
         color: #ffffff; }
+
+/*-----------------Medias Queries-------------------*/
+/*+-+-+-+-Estilos hasta 768px-+--+-+-+-*/
+/*++++Index++++*/
+@media screen and (min-width: 768px) {
+  .headerIndex {
+    display: grid;
+    grid-template-areas: "sectionTecnico sectionPresentacion" "sectionTecnico sectionParrafo" "sectionFlechas sectionFlechas" "seleccionDeDispositivo seleccionDeDispositivo"; }
+    .headerIndex .sectionTecnico {
+      grid-area: sectionTecnico;
+      padding-left: 5rem; }
+    .headerIndex .sectionPresentacion {
+      grid-area: sectionPresentacion;
+      padding-top: 3rem;
+      padding-left: 2rem; }
+      .headerIndex .sectionPresentacion h1 {
+        font-size: 1.7rem; }
+    .headerIndex .sectionParrafo {
+      grid-area: sectionParrafo;
+      padding-bottom: 3rem;
+      padding-left: 2rem; }
+      .headerIndex .sectionParrafo #bottom {
+        font-size: 1.5rem; }
+    .headerIndex .sectionFlechas {
+      grid-area: sectionFlechas; }
+    .headerIndex .seleccionDeDispositivo {
+      grid-area: seleccionDeDispositivo;
+      padding-top: 3rem;
+      padding-left: 4.7rem; } }
 
 /*++++++++++Estilos body Index++++++++++++*/
 * {
@@ -529,6 +562,43 @@ body {
     .mainLegales .legales li {
       font-size: 1rem;
       color: #ffffffec; }
+
+/*-----------------Medias Queries-------------------*/
+/*+-+-+-+-Estilos hasta 768px-+--+-+-+-*/
+/*++++Index++++*/
+@media screen and (min-width: 768px) {
+  .mainIndex {
+    display: grid;
+    grid-template-areas: "aireAcondicionado desktop" "notebook proximamente" "proximamente2 proximamente3";
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 5rem; }
+    .mainIndex .aireAcondicionado {
+      grid-area: aireAcondicionado; }
+      .mainIndex .aireAcondicionado .producto {
+        padding: 1rem; }
+    .mainIndex .desktop {
+      grid-area: desktop; }
+      .mainIndex .desktop .producto {
+        padding: 1rem;
+        padding-bottom: 2.9rem; }
+    .mainIndex .notebook {
+      grid-area: notebook; }
+      .mainIndex .notebook .producto {
+        padding: 1rem; }
+    .mainIndex .proximamente {
+      grid-area: proximamente; }
+      .mainIndex .proximamente .producto {
+        padding: 1rem;
+        padding-bottom: 6.6rem; }
+    .mainIndex .proximamente2 {
+      grid-area: proximamente2; }
+      .mainIndex .proximamente2 .producto {
+        padding: 1rem; }
+    .mainIndex .proximamente3 {
+      grid-area: proximamente3; }
+      .mainIndex .proximamente3 .producto {
+        padding: 1rem; } }
 
 /*+++++++++Estilos Footer Index Mobile+++++++++++*/
 footer {
