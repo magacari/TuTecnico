@@ -3,7 +3,45 @@ $color-texto-secundario: #000000;
 $color-sombras-index: #ff5e00;
 $color-sombras-notebook: #ff0000;
 $color-sombras-pcdesktop: #594bdb;
+$color-sombras-redessociales: #1ead0b;
 $color-sombras-cuadros-aire: #c36a04;
 $color-sombras-cuadros-notebook:#ff000063;
 $color-sombras-cuadros-pcdesktop:#68e1ffee;
 $fuentes-sub-titulos: sanserif;
+
+
+
+/*Maps*/
+
+$titulos: (
+    aireAcondicionado: $color-sombras-index,
+    pcDesktop: $color-sombras-pcdesktop,
+    notebook: $color-sombras-notebook,
+    redesSociales: $color-sombras-redessociales,
+);
+
+@each $titulo, $textshadow in $titulos {
+
+    .titulo-#{$titulo} {
+        color: $color-texto-gral;
+        text-shadow: 3px 3px 7px $textshadow;
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 15px;
+    } 
+}
+
+
+/*Mixins*/
+
+@mixin esquemasHeaderDispositivos {
+    
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: #f0f8ffe5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+}

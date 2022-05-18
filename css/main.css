@@ -1,3 +1,33 @@
+/*Maps*/
+.titulo-aireAcondicionado {
+  color: #ffffffec;
+  text-shadow: 3px 3px 7px #ff5e00;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 15px; }
+
+.titulo-pcDesktop {
+  color: #ffffffec;
+  text-shadow: 3px 3px 7px #594bdb;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 15px; }
+
+.titulo-notebook {
+  color: #ffffffec;
+  text-shadow: 3px 3px 7px #ff0000;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 15px; }
+
+.titulo-redesSociales {
+  color: #ffffffec;
+  text-shadow: 3px 3px 7px #1ead0b;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 15px; }
+
+/*Mixins*/
 /*++++++++++++++Estilos Nav Index++++++++++++*/
 nav {
   background-image: linear-gradient(to right, #888888, #ffffff);
@@ -81,21 +111,15 @@ nav {
 /*++++++++++++Estilos Header aireAcondicionado+++++++++++++*/
 .headerAire {
   grid-area: headerAire; }
-  .headerAire .tituloAire {
-    color: #ffffffec;
-    text-shadow: 3px 3px 7px #ff5e00;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 15px; }
   .headerAire .esquemaAire {
     padding: 0.5rem;
     margin: 1rem;
-    box-shadow: 3px 2px 7px #c36a04;
     background-color: #f0f8ffe5;
     display: flex;
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    box-shadow: 3px 2px 7px #c36a04; }
     .headerAire .esquemaAire .subtituloAire {
       color: #000000;
       text-shadow: 3px 3px 7px #ff5e00;
@@ -109,21 +133,15 @@ nav {
 /*++++++++++++Estilos Header notebook+++++++++++++*/
 .headerNotebook {
   grid-area: headerNotebook; }
-  .headerNotebook .tituloNotebook {
-    color: #ffffffec;
-    text-shadow: 3px 3px 7px #ff0000;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 15px; }
   .headerNotebook .esquemaNotebook {
     padding: 0.5rem;
     margin: 1rem;
-    box-shadow: 3px 2px 7px #ff000063;
     background-color: #f0f8ffe5;
     display: flex;
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    box-shadow: 3px 2px 7px #ff000063; }
     .headerNotebook .esquemaNotebook .subtituloNotebook {
       color: #000000;
       text-shadow: 3px 3px 7px #ff0000;
@@ -137,21 +155,15 @@ nav {
 /*++++++++++++++ Estilos Header pcDesktop +++++++++++++++*/
 .headerDesktop {
   grid-area: headerDesktop; }
-  .headerDesktop .tituloDesktop {
-    color: #ffffffec;
-    text-shadow: 3px 3px 7px #594bdb;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 15px; }
   .headerDesktop .esquemaDesktop {
     padding: 0.5rem;
     margin: 1rem;
-    box-shadow: 3px 2px 7px #68e1ffee;
     background-color: #f0f8ffe5;
     display: flex;
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    box-shadow: 3px 2px 7px #68e1ffee; }
     .headerDesktop .esquemaDesktop .subtituloDesktop {
       color: #000000;
       text-shadow: 3px 3px 7px #594bdb;
@@ -163,56 +175,29 @@ nav {
       width: 16rem; }
 
 /*++++++++++++ Estilos Header redesSociales +++++++++++++*/
-.tituloInfo {
-  color: #ffffff;
-  text-shadow: 3px 3px 7px #1ead0b;
-  font-size: 2rem;
-  text-align: center; }
-
 .container {
   padding: 1.5rem;
   display: grid;
   grid-template-areas: "row1" "row2" "row3" "row4";
   text-shadow: 1px 1px 1px #ffffff; }
-  .container .row1 {
+  .container .row1, .container .row2, .container .row3, .container .row4 {
     background-color: #ffffff10;
     box-shadow: 2px 2px 5px #1ead0b96;
     padding: 0.5rem;
     grid-area: row1; }
-    .container .row1 .col {
+    .container .row1 .col, .container .row2 .col, .container .row3 .col, .container .row4 .col {
       pad: 30px; }
-      .container .row1 .col .parrafoInfo {
+      .container .row1 .col .parrafoInfo, .container .row2 .col .parrafoInfo, .container .row3 .col .parrafoInfo, .container .row4 .col .parrafoInfo {
         color: #ffffff; }
   .container .row2 {
-    background-color: #ffffff10;
-    box-shadow: 2px 2px 5px #1ead0b96;
-    padding: 0.5rem;
     grid-area: row2;
     margin-top: 1rem; }
-    .container .row2 .col {
-      pad: 30px; }
-      .container .row2 .col .parrafoInfo {
-        color: #ffffff; }
   .container .row3 {
-    background-color: #ffffff10;
-    box-shadow: 2px 2px 5px #1ead0b96;
-    padding: 0.5rem;
     grid-area: row3;
     margin-top: 1rem; }
-    .container .row3 .col {
-      pad: 30px; }
-      .container .row3 .col .parrafoInfo {
-        color: #ffffff; }
   .container .row4 {
-    background-color: #ffffff10;
-    box-shadow: 2px 2px 5px #1ead0b96;
-    padding: 0.5rem;
     grid-area: row4;
     margin-top: 1rem; }
-    .container .row4 .col {
-      pad: 30px; }
-      .container .row4 .col .parrafoInfo {
-        color: #ffffff; }
 
 /*-----------------Medias Queries-------------------*/
 /*+-+-+-+-Estilos hasta 768px-+--+-+-+-*/
@@ -398,6 +383,7 @@ body {
     color: #ffffffec;
     font-size: 1.2rem; }
   .producto .imagenes {
+    margin: 2rem;
     height: 16rem;
     width: 16rem; }
 

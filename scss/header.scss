@@ -87,23 +87,10 @@
     .headerAire {
         grid-area: headerAire; 
 
-        .tituloAire {
-            color: $color-texto-gral;
-            text-shadow: 3px 3px 7px $color-sombras-index;
-            font-size: 2.5rem;
-            text-align: center;
-            padding: 15px;
-        }  
-        
         .esquemaAire {
-            padding: 0.5rem;
-            margin: 1rem;
+            
+            @include esquemasHeaderDispositivos;
             box-shadow: 3px 2px 7px $color-sombras-cuadros-aire; 
-            background-color: #f0f8ffe5;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            flex-wrap: wrap;
 
                 .subtituloAire {
                     color: $color-texto-secundario;
@@ -129,23 +116,10 @@
 .headerNotebook {
     grid-area: headerNotebook; 
 
-    .tituloNotebook {
-        color: $color-texto-gral;
-        text-shadow: 3px 3px 7px $color-sombras-notebook;
-        font-size: 2.5rem;
-        text-align: center;
-        padding: 15px;
-    }
-
     .esquemaNotebook {
-        padding: 0.5rem;
-        margin: 1rem;
+        
+        @include esquemasHeaderDispositivos;
         box-shadow: 3px 2px 7px $color-sombras-cuadros-notebook; 
-        background-color: #f0f8ffe5;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
 
         .subtituloNotebook {
             color: $color-texto-secundario;
@@ -170,23 +144,11 @@
 .headerDesktop {
     grid-area: headerDesktop; 
 
-    .tituloDesktop {
-        color: $color-texto-gral;
-        text-shadow: 3px 3px 7px $color-sombras-pcdesktop;
-        font-size: 2.5rem;
-        text-align: center;
-        padding: 15px;
-    }
-
     .esquemaDesktop {
-        padding: 0.5rem;
-        margin: 1rem;
+
+        @include esquemasHeaderDispositivos;
         box-shadow: 3px 2px 7px $color-sombras-cuadros-pcdesktop; 
-        background-color: #f0f8ffe5;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
+        
 
         .subtituloDesktop {
             color: $color-texto-secundario;
@@ -209,12 +171,6 @@
 
 /*++++++++++++ Estilos Header redesSociales +++++++++++++*/
 
-.tituloInfo {
-    color: #ffffff;
-    text-shadow: 3px 3px 7px #1ead0b;
-    font-size: 2rem;
-    text-align: center;
-}
 .container {
     padding: 1.5rem;
     display: grid;
@@ -236,56 +192,29 @@
             pad: 30px;
     
             .parrafoInfo{
-                
+
                 color: #ffffff;
             }
         }
     }
+
     .row2 {
-        background-color: #ffffff10; 
-        box-shadow: 2px 2px 5px #1ead0b96;       
-        padding: 0.5rem;
+        
         grid-area: row2;
         margin-top: 1rem;
-        
-        .col{
-            pad: 30px;
-    
-            .parrafoInfo{
-                
-                color: #ffffff;
-            }
-        }
+        @extend .row1;    
     }
     .row3 {
-        background-color: #ffffff10; 
-        box-shadow: 2px 2px 5px #1ead0b96;          
-        padding: 0.5rem;
+       
         grid-area: row3;
         margin-top: 1rem;
-        .col{
-            pad: 30px;
-    
-            .parrafoInfo{
-                
-                color: #ffffff;
-            }
-        }
+        @extend .row1;      
     }
     .row4 {
-        background-color: #ffffff10; 
-        box-shadow: 2px 2px 5px #1ead0b96;         
-        padding: 0.5rem;
+        
         grid-area: row4;
         margin-top: 1rem;
-        .col{
-            pad: 30px;
-    
-            .parrafoInfo{
-                
-                color: #ffffff;
-            }
-        }
+        @extend .row1;    
     }
 
 }
