@@ -275,10 +275,9 @@ nav {
         width: 13rem;
         margin-top: -23rem;
         margin-left: 5rem;
-        transition: height 1s, width 1s; }
+        transition: transform 1s; }
       .headerIndex .botonStart .botonComenzar:hover {
-        height: 19rem;
-        width: 17rem; } }
+        transform: scale(1.5); } }
 
 @media screen and (min-width: 1750px) {
   .headerIndex .sectionTecnico {
@@ -660,10 +659,9 @@ body {
     grid-template-columns: 5fr 5fr 5fr;
     grid-template-rows: 5fr 5fr 5fr; }
     .mainIndex img {
-      transition: height 0.5s, width 0.5s; }
+      transition: transform 0.5s; }
     .mainIndex img:hover {
-      height: 18rem;
-      width: 18rem; }
+      transform: scale(1.2); }
     .mainIndex .aireAcondicionado {
       grid-area: aireAcondicionado; }
     .mainIndex .desktop {

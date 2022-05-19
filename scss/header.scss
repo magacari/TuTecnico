@@ -353,11 +353,10 @@
                         width: 13rem;
                         margin-top: -23rem;
                         margin-left: 5rem;
-                        transition: height 1s, width 1s;
+                        transition: transform 1s;
                     }
                     .botonComenzar:hover{
-                        height: 19rem;
-                        width: 17rem;
+                        transform: scale(1.5);
                     }
                     
 
