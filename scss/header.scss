@@ -31,7 +31,7 @@
         font-family: 'Fredoka One', sans-serif;
         grid-area: sectionPresentacion;
         box-sizing: border-box;
-        text-shadow: 2px 2px 3.5px $color-sombras-index;
+        text-shadow: 2px 2px 3.5px #6af8bd;
         
         h1{
             font-size: 1.2rem;
@@ -43,7 +43,7 @@
         font-family: 'Fredoka One', sans-serif;
         font-size: 1.5rem;
         box-sizing: border-box;
-        text-shadow: 2px 2px 3.5px $color-sombras-index; 
+        text-shadow: 2px 2px 3.5px #6af8bd; 
         padding-top: 6rem;
         padding-left: 1rem;
 
@@ -78,7 +78,7 @@
     font-family: 'Fredoka One', sans-serif;
     font-size: 1.5rem;
     box-sizing: border-box;
-    text-shadow: 2px 2px 3.5px $color-sombras-index;
+    text-shadow: 2px 2px 3.5px #6af8bd;
     
 }
 
@@ -388,12 +388,11 @@
                 width: 15rem;
                 margin-top: -23rem;
                 margin-left: 8rem;
-                transition: height 1s, width 1s;
+                transition: transform 1s;
             }
             .botonComenzar:hover{
-                height: 26rem;
-                width: 22rem;
-            } 
+                transform: scale(1.5);
+            }
         }
 
         .seleccionDeDispositivo{

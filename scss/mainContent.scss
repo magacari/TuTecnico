@@ -39,7 +39,8 @@
 
 }
 .producto {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 4px #000000;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     display:grid;
     justify-items: center;
@@ -47,12 +48,13 @@
     align-content: center;
     justify-content: center;
     margin: 1.5rem;  
-    background-color: #f8f8f873; 
-    box-shadow: 3px 3px 5px  #b8b8b8;  
+    background-image: linear-gradient(to right, #302f2f,#dcfff1);
+    box-shadow: 3px 3px 5px  #6af8bd;  
 
     .parrafoProducto {
         color: $color-texto-gral;
-        font-size: 1.2rem;
+        text-shadow: 2px 2px 4px #000000;
+        font-size: 1.7rem;
     }
     
     .imagenes {
