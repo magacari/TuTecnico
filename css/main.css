@@ -73,7 +73,7 @@ nav {
     font-family: 'Fredoka One', sans-serif;
     grid-area: sectionPresentacion;
     box-sizing: border-box;
-    text-shadow: 2px 2px 3.5px #6af8bd; }
+    text-shadow: 2px 2px 3.5px #ff5f5f; }
     .headerIndex .sectionPresentacion h1 {
       font-size: 1.2rem; }
   .headerIndex .sectionParrafo {
@@ -82,7 +82,7 @@ nav {
     font-family: 'Fredoka One', sans-serif;
     font-size: 1.5rem;
     box-sizing: border-box;
-    text-shadow: 2px 2px 3.5px #6af8bd;
+    text-shadow: 2px 2px 3.5px #ff5f5f;
     padding-top: 6rem;
     padding-left: 1rem; }
     .headerIndex .sectionParrafo #bottom {
@@ -106,11 +106,12 @@ nav {
   font-family: 'Fredoka One', sans-serif;
   font-size: 1.5rem;
   box-sizing: border-box;
-  text-shadow: 2px 2px 3.5px #6af8bd; }
+  text-shadow: 2px 2px 3.5px #ff5f5f; }
 
 /*++++++++++++Estilos Header aireAcondicionado+++++++++++++*/
 .headerAire {
-  grid-area: headerAire; }
+  grid-area: headerAire;
+  margin: 1rem; }
   .headerAire .esquemaAire {
     padding: 0.5rem;
     margin: 1rem;
@@ -132,7 +133,8 @@ nav {
 
 /*++++++++++++Estilos Header notebook+++++++++++++*/
 .headerNotebook {
-  grid-area: headerNotebook; }
+  grid-area: headerNotebook;
+  margin: 1rem; }
   .headerNotebook .esquemaNotebook {
     padding: 0.5rem;
     margin: 1rem;
@@ -154,7 +156,8 @@ nav {
 
 /*++++++++++++++ Estilos Header pcDesktop +++++++++++++++*/
 .headerDesktop {
-  grid-area: headerDesktop; }
+  grid-area: headerDesktop;
+  margin: 1rem; }
   .headerDesktop .esquemaDesktop {
     padding: 0.5rem;
     margin: 1rem;
@@ -179,7 +182,8 @@ nav {
   padding: 1.5rem;
   display: grid;
   grid-template-areas: "row1" "row2" "row3" "row4";
-  text-shadow: 1px 1px 1px #ffffff; }
+  text-shadow: 1px 1px 1px #ffffff;
+  gap: 2rem; }
   .container .row1, .container .row2, .container .row3, .container .row4 {
     background-color: #ffffff10;
     box-shadow: 2px 2px 5px #1ead0b96;
@@ -190,14 +194,11 @@ nav {
       .container .row1 .col .parrafoInfo, .container .row2 .col .parrafoInfo, .container .row3 .col .parrafoInfo, .container .row4 .col .parrafoInfo {
         color: #ffffff; }
   .container .row2 {
-    grid-area: row2;
-    margin-top: 1rem; }
+    grid-area: row2; }
   .container .row3 {
-    grid-area: row3;
-    margin-top: 1rem; }
+    grid-area: row3; }
   .container .row4 {
-    grid-area: row4;
-    margin-top: 1rem; }
+    grid-area: row4; }
 
 /*-----------------Medias Queries-------------------*/
 /*+-+-+-+-Estilos hasta 768px-+--+-+-+-*/
@@ -226,9 +227,57 @@ nav {
     .headerIndex .seleccionDeDispositivo {
       grid-area: seleccionDeDispositivo;
       padding-top: 3rem;
-      padding-left: 4.7rem; } }
+      padding-left: 4.7rem; }
+  /*++++++++ aireAcondicionado ++++++++++*/
+  .headerAire {
+    margin: 2rem; }
+    .headerAire .titulo-aireAcondicionado {
+      font-size: 3.5rem; }
+    .headerAire .esquemaAire .subtituloAire {
+      font-size: 2.5rem;
+      padding-bottom: 1rem; }
+    .headerAire .esquemaAire .partesAire {
+      font-size: 1.5rem; }
+    .headerAire .esquemaAire .videoHeaderAire {
+      padding-top: 1rem;
+      height: 20rem;
+      width: 30rem; }
+  /*++++++++ Notebook ++++++++++*/
+  .headerNotebook {
+    margin: 2rem; }
+    .headerNotebook .titulo-notebook {
+      font-size: 3.5rem; }
+    .headerNotebook .esquemaNotebook .subtituloNotebook {
+      font-size: 2.5rem;
+      padding-bottom: 1rem; }
+    .headerNotebook .esquemaNotebook .partesNotebook {
+      font-size: 1.5rem; }
+    .headerNotebook .esquemaNotebook .videoHeaderNotebook {
+      padding-top: 1rem;
+      height: 20rem;
+      width: 30rem; }
+  /*++++++++ pcDesktop ++++++++++*/
+  .headerDesktop {
+    margin: 2rem; }
+    .headerDesktop .titulo-pcDesktop {
+      font-size: 3.5rem; }
+    .headerDesktop .esquemaDesktop .subtituloDesktop {
+      font-size: 2.5rem;
+      padding-bottom: 1rem; }
+    .headerDesktop .esquemaDesktop .partesDesktop {
+      font-size: 1.5rem; }
+    .headerDesktop .esquemaDesktop .videoHeaderDesktop {
+      padding-top: 1rem;
+      height: 20rem;
+      width: 30rem; }
+  /*++++++++++++ redesSociales +++++++++++++*/
+  .container {
+    padding: 1.5rem;
+    grid-template-areas: "row1 row2" "row3 row4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; } }
 
-/*+-+-+-+-Estilos hasta 768px-+--+-+-+-*/
+/*+-+-+-+-Estilos hasta 1024px-+--+-+-+-*/
 /*++++Index++++*/
 @media screen and (min-width: 1024px) {
   .headerIndex {
@@ -279,7 +328,9 @@ nav {
       .headerIndex .botonStart .botonComenzar:hover {
         transform: scale(1.5); } }
 
+/*+-+-+-+-Estilos hasta 1750px-+--+-+-+-*/
 @media screen and (min-width: 1750px) {
+  /*++++++++++++++Index+++++++++++++*/
   .headerIndex .sectionTecnico {
     grid-area: sectionTecnico;
     padding-left: 8rem; }
@@ -300,7 +351,19 @@ nav {
   .headerIndex .seleccionDeDispositivo {
     padding-top: 3rem;
     padding-left: 12rem;
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  /*++++++++ aireAcondicionado ++++++++++*/
+  .headerAire {
+    margin-left: 9rem;
+    margin-right: 9rem; }
+  /*++++++++ Notebook ++++++++++*/
+  .headerNotebook {
+    margin-left: 9rem;
+    margin-right: 9rem; }
+  /*++++++++ pcDesktop ++++++++++*/
+  .headerDesktop {
+    margin-left: 9rem;
+    margin-right: 9rem; } }
 
 /*++++++++++Estilos body Index++++++++++++*/
 * {
@@ -314,9 +377,9 @@ html {
 
 body {
   background-color: #0f0f0f;
-  background-image: url(../public/image/fondoherramientas2.png);
+  /* background-image: url(../public/image/fondoherramientas2.png); */
   position: absolute;
-  background-size: 40rem;
+  background-size: 30rem;
   justify-content: center; }
 
 /*++++++++++Estilos body aireAcondicionado++++++++++++*/
@@ -376,8 +439,8 @@ body {
   align-content: center;
   justify-content: center;
   margin: 1.5rem;
-  background-image: linear-gradient(to right, #302f2f, #dcfff1);
-  box-shadow: 3px 3px 5px  #6af8bd; }
+  background-image: linear-gradient(to right, #302f2f, #ccc9c9);
+  box-shadow: 3px 3px 5px  #ffffff; }
   .producto .parrafoProducto {
     color: #ebdddd;
     text-shadow: 2px 2px 4px #000000;
@@ -391,10 +454,11 @@ body {
 .mainAire {
   grid-area: mainAire; }
   .mainAire .fallasAire {
-    margin: 1rem;
+    margin: 2rem;
     padding: 0.5rem;
     box-shadow: 3px 3px 7px #c36a04;
-    background-color: #f0f8ffe5; }
+    background-color: #f0f8ffe5;
+    margin-bottom: 5rem; }
     .mainAire .fallasAire .partesAire {
       font-size: 1rem; }
     .mainAire .fallasAire .subtituloMainAire {
@@ -411,14 +475,16 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     display: grid;
-    grid-template-areas: "divFalla1 divFalla2" "divFalla3 divFalla4" "divFalla5 divFalla6"; }
+    grid-template-areas: "divFalla1 divFalla2" "divFalla3 divFalla4" "divFalla5 divFalla6";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; }
     .mainAire .sectionFallas div {
       justify-content: center;
       align-content: center;
       padding: 0.5rem;
       margin: 0.5rem;
-      background-color: #f8f8f89c;
-      box-shadow: 3px 2px 15px #302d2a; }
+      background-image: linear-gradient(to right, #ffffff, #9c9a9a);
+      box-shadow: 3px 3px 5px  #ffffff; }
       .mainAire .sectionFallas div .imagenAireGoteando {
         padding: 0.25rem;
         margin: 0.25rem;
@@ -427,13 +493,6 @@ body {
         flex-wrap: wrap;
         display: flex;
         justify-content: center; }
-      .mainAire .sectionFallas div .textArea {
-        height: 7rem;
-        width: 7rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
       .mainAire .sectionFallas div .h3Falla {
         font-size: 1.2rem; }
     .mainAire .sectionFallas .divFalla1 {
@@ -452,21 +511,24 @@ body {
     grid-area: divFalla7;
     padding: 0.5rem;
     margin: 0.5rem; }
-  .mainAire .botonNext {
-    padding: 0.5rem;
-    margin: 2rem;
-    height: 10rem;
-    width: 12rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    .mainAire .divFalla7 .textArea {
+      height: 10rem;
+      width: 15rem; }
+    .mainAire .divFalla7 .botonNext {
+      padding: 0.5rem;
+      margin: 2rem;
+      height: 10rem;
+      width: 12rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
 
 /*++++++++++++++Estilos Main Notebook++++++++++++*/
 .mainNotebook {
   grid-area: mainNotebook; }
   .mainNotebook .fallasNotebook {
-    margin: 1rem;
+    margin: 2rem;
     padding: 0.5rem;
     box-shadow: 3px 3px 7px #ff000063;
     background-color: #f0f8ffe5; }
@@ -486,14 +548,16 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     display: grid;
-    grid-template-areas: "divFalla1Note divFalla2Note" "divFalla3Note divFalla4Note" "divFalla5Note divFalla6Note"; }
+    grid-template-areas: "divFalla1Note divFalla2Note" "divFalla3Note divFalla4Note" "divFalla5Note divFalla6Note";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; }
     .mainNotebook .sectionFallasNotebook div {
       justify-content: center;
       align-content: center;
       padding: 0.5rem;
       margin: 0.5rem;
-      background-color: #f8f8f89c;
-      box-shadow: 3px 2px 15px #302d2a; }
+      background-image: linear-gradient(to right, #ffffff, #9c9a9a);
+      box-shadow: 3px 3px 5px  #ffffff; }
       .mainNotebook .sectionFallasNotebook div .imagenNotebookNoEnciende {
         padding: 0.25rem;
         margin: 0.25rem;
@@ -502,15 +566,8 @@ body {
         flex-wrap: wrap;
         display: flex;
         justify-content: center; }
-      .mainNotebook .sectionFallasNotebook div .textAreaNote {
-        height: 7rem;
-        width: 7rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
       .mainNotebook .sectionFallasNotebook div .h3Falla {
-        font-size: 1rem; }
+        font-size: 1.2rem; }
     .mainNotebook .sectionFallasNotebook .divFalla1Note {
       grid-area: divFalla1Note; }
     .mainNotebook .sectionFallasNotebook .divFalla2Note {
@@ -527,24 +584,28 @@ body {
     grid-area: divFalla7Note;
     padding: 0.5rem;
     margin: 0.5rem; }
-  .mainNotebook .botonNext {
-    padding: 0.5rem;
-    margin: 2rem;
-    height: 10rem;
-    width: 12rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    .mainNotebook .divFalla7Note .textAreaNote {
+      height: 10rem;
+      width: 15rem; }
+    .mainNotebook .divFalla7Note .botonNext {
+      padding: 0.5rem;
+      margin: 2rem;
+      height: 10rem;
+      width: 12rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
 
 /*++++++++++++++Estilos Main pcDesktop++++++++++++*/
 .mainDesktop {
   grid-area: mainDesktop; }
   .mainDesktop .fallasDesktop {
-    margin: 1rem;
+    margin: 2rem;
     padding: 0.5rem;
     box-shadow: 3px 3px 7px #68e1ffee;
-    background-color: #f0f8ffe5; }
+    background-color: #f0f8ffe5;
+    margin-bottom: 5rem; }
     .mainDesktop .fallasDesktop .partesDesktop {
       font-size: 1rem; }
     .mainDesktop .fallasDesktop .subtituloMainDesktop {
@@ -567,8 +628,8 @@ body {
       align-content: center;
       padding: 0.5rem;
       margin: 0.5rem;
-      background-color: #f8f8f89c;
-      box-shadow: 3px 2px 15px #302d2a; }
+      background-image: linear-gradient(to right, #ffffff, #9c9a9a);
+      box-shadow: 3px 3px 5px  #ffffff; }
       .mainDesktop .sectionFallasDesktop div .imagenFallaDesktop {
         padding: 0.25rem;
         margin: 0.25rem;
@@ -577,15 +638,8 @@ body {
         flex-wrap: wrap;
         display: flex;
         justify-content: center; }
-      .mainDesktop .sectionFallasDesktop div .textAreaDesktop {
-        height: 7rem;
-        width: 7rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
       .mainDesktop .sectionFallasDesktop div .h3Falla {
-        font-size: 1rem; }
+        font-size: 1.2rem; }
     .mainDesktop .sectionFallasDesktop .divFalla1Pc {
       grid-area: divFalla1Pc; }
     .mainDesktop .sectionFallasDesktop .divFalla2Pc {
@@ -602,33 +656,36 @@ body {
     grid-area: divFalla7Pc;
     padding: 0.5rem;
     margin: 0.5rem; }
-  .mainDesktop .botonNext {
-    padding: 0.5rem;
-    margin: 2rem;
-    height: 10rem;
-    width: 12rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    .mainDesktop .divFalla7Pc .textAreaDesktop {
+      height: 10rem;
+      width: 15rem; }
+    .mainDesktop .divFalla7Pc .botonNext {
+      padding: 0.5rem;
+      margin: 2rem;
+      height: 10rem;
+      width: 12rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
 
 /*++++++++++++++Estilos Main redesSociales++++++++++++*/
 .mainLegales {
   color: #000000; }
   .mainLegales .legales {
-    margin: 1rem 1rem;
     font-size: 1.5rem;
     margin: 1.5rem;
     box-shadow: 3px 2px 7px #1ead0b;
-    background-color: #f0f8ff1c; }
+    background-color: #f0f8ff1c;
+    margin-bottom: 5rem; }
     .mainLegales .legales li {
       font-size: 1rem;
       color: #ebdddd; }
 
-/*-----------------Medias Queries-------------------*/
+/*-------------------------------Medias Queries----------------------------*/
 /*+-+-+-+-Estilos hasta 768px-+--+-+-+-*/
-/*++++Index++++*/
 @media screen and (min-width: 768px) {
+  /*++++++++Index+++++++++++++*/
   .mainIndex {
     display: grid;
     grid-template-areas: "aireAcondicionado desktop" "notebook proximamente" "proximamente2 proximamente3";
@@ -647,11 +704,95 @@ body {
     .mainIndex .proximamente2 {
       grid-area: proximamente2; }
     .mainIndex .proximamente3 {
-      grid-area: proximamente3; } }
+      grid-area: proximamente3; }
+  /*++++++++ aireAcondicionado ++++++++++*/
+  .mainAire .fallasAire {
+    margin: 3rem; }
+    .mainAire .fallasAire .partesAire {
+      font-size: 1.5rem; }
+    .mainAire .fallasAire .subtituloMainAire {
+      font-size: 3rem; }
+    .mainAire .fallasAire .pMarcas {
+      font-size: 1.5rem; }
+  .mainAire .sectionFallas {
+    grid-template-areas: "divFalla1 divFalla2 divFalla3" "divFalla4 divFalla5 divFalla6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem; }
+    .mainAire .sectionFallas div .imagenAireGoteando {
+      width: 7rem;
+      height: 7rem;
+      margin-left: 1rem; }
+  .mainAire .divFalla7 {
+    margin-left: 11rem; }
+    .mainAire .divFalla7 .textArea {
+      height: 12rem;
+      width: 18rem; }
+    .mainAire .divFalla7 .botonNext {
+      margin-left: 3rem; }
+  /*++++++++ Notebook ++++++++++*/
+  .mainNotebook .fallasNotebook {
+    margin: 3rem; }
+    .mainNotebook .fallasNotebook .partesNotebook {
+      font-size: 1.5rem; }
+    .mainNotebook .fallasNotebook .subtituloMainNotebook {
+      font-size: 3rem; }
+    .mainNotebook .fallasNotebook .pMarcas {
+      font-size: 1.5rem; }
+  .mainNotebook .sectionFallasNotebook {
+    grid-template-areas: "divFalla1Note divFalla2Note divFalla3Note" "divFalla4Note divFalla5Note divFalla6Note";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem; }
+    .mainNotebook .sectionFallasNotebook div .imagenNotebookNoEnciende {
+      width: 7rem;
+      height: 7rem;
+      margin-left: 1rem; }
+  .mainNotebook .divFalla7Note {
+    margin-left: 11rem; }
+    .mainNotebook .divFalla7Note .textArea {
+      height: 12rem;
+      width: 18rem; }
+    .mainNotebook .divFalla7Note .botonNext {
+      margin-left: 3rem; }
+  /*++++++++ pcDesktop ++++++++++*/
+  .mainDesktop .fallasDesktop {
+    margin: 3rem; }
+    .mainDesktop .fallasDesktop .partesDesktop {
+      font-size: 1.5rem; }
+    .mainDesktop .fallasDesktop .subtituloMainDesktop {
+      font-size: 3rem; }
+    .mainDesktop .fallasDesktop .pMarcas {
+      font-size: 1.5rem; }
+  .mainDesktop .sectionFallasDesktop {
+    grid-template-areas: "divFalla1Pc divFalla2Pc divFalla3Pc" "divFalla4Pc divFalla5Pc divFalla6Pc";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem; }
+    .mainDesktop .sectionFallasDesktop div .imagenFallaDesktop {
+      width: 7rem;
+      height: 7rem;
+      margin-left: 1rem; }
+  .mainDesktop .divFalla7Pc {
+    margin-left: 11rem; }
+    .mainDesktop .divFalla7Pc .textArea {
+      height: 12rem;
+      width: 18rem; }
+    .mainDesktop .divFalla7Pc .botonNext {
+      margin-left: 3rem; }
+  /*++++++++++++++redesSociales++++++++++++*/
+  .mainLegales .legales {
+    margin: 3.5rem;
+    font-size: 1.5rem; }
+    .mainLegales .legales li {
+      font-size: 1.5rem; } }
 
 /*+-+-+-+-Estilos hasta 1024px-+--+-+-+-*/
-/*++++Index++++*/
 @media screen and (min-width: 1024px) {
+  /*++++++++++++++Index+++++++++++++*/
   .mainIndex {
     display: grid;
     grid-template-areas: "aireAcondicionado desktop notebook" "proximamente proximamente2 proximamente3";
@@ -674,11 +815,109 @@ body {
     .mainIndex .proximamente2 {
       grid-area: proximamente2; }
     .mainIndex .proximamente3 {
-      grid-area: proximamente3; } }
+      grid-area: proximamente3; }
+  /*++++++++ aireAcondicionado ++++++++++*/
+  .mainAire .divFalla7 {
+    margin-left: 19rem; }
+  .mainAire .sectionFallas div .imagenAireGoteando {
+    width: 8.5rem;
+    height: 8.5rem;
+    margin-left: 3rem; }
+  /*++++++++ Notebook ++++++++++*/
+  .mainNotebook .divFalla7Note {
+    margin-left: 19rem; }
+  .mainNotebook .sectionFallasNotebook div .imagenNotebookNoEnciende {
+    width: 8.5rem;
+    height: 8.5rem;
+    margin-left: 3rem; }
+  /*++++++++ pcDesktop ++++++++++*/
+  .mainDesktop .divFalla7Pc {
+    margin-left: 19rem; }
+  .mainDesktop .sectionFallasDesktop div .imagenFallaDesktop {
+    width: 8.5rem;
+    height: 8.5rem;
+    margin-left: 3rem; }
+  /*++++++++++++++redesSociales++++++++++++*/
+  .mainLegales .legales {
+    margin: 8rem; } }
 
+/*+-+-+-+-Estilos hasta 1750px-+--+-+-+-*/
 @media screen and (min-width: 1750px) {
+  /*++++++++++++++Index+++++++++++++*/
   .mainIndex .producto {
-    padding: 4rem 1rem 4rem 1rem; } }
+    padding: 4rem 1rem 4rem 1rem; }
+  /*++++++++ aireAcondicionado ++++++++++*/
+  .mainAire {
+    margin: 7rem; }
+    .mainAire .divFalla7 {
+      margin-left: 24rem;
+      display: flex;
+      gap: 2rem; }
+      .mainAire .divFalla7 .textArea {
+        height: 14rem;
+        width: 20rem;
+        display: flex;
+        flex-direction: column; }
+      .mainAire .divFalla7 .botonNext {
+        height: 15rem;
+        width: 17rem; }
+    .mainAire .sectionFallas {
+      grid-template-areas: "divFalla1 divFalla2 divFalla3 divFalla4 divFalla5 divFalla6";
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 2rem; }
+      .mainAire .sectionFallas div .imagenAireGoteando {
+        width: 9rem;
+        height: 9rem;
+        margin-left: 1.5rem; }
+  /*++++++++++ Notebook +++++++++++*/
+  .mainNotebook {
+    margin: 7rem; }
+    .mainNotebook .divFalla7Note {
+      margin-left: 24rem;
+      display: flex;
+      gap: 2rem; }
+      .mainNotebook .divFalla7Note .textArea {
+        height: 14rem;
+        width: 20rem;
+        display: flex;
+        flex-direction: column; }
+      .mainNotebook .divFalla7Note .botonNext {
+        height: 15rem;
+        width: 17rem; }
+    .mainNotebook .sectionFallasNotebook {
+      grid-template-areas: "divFalla1Note divFalla2Note divFalla3Note divFalla4Note divFalla5Note divFalla6Note";
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 2rem; }
+      .mainNotebook .sectionFallasNotebook div .imagenNotebookNoEnciende {
+        width: 9rem;
+        height: 9rem;
+        margin-left: 1.5rem; }
+  /*++++++++++ pcDesktop +++++++++++*/
+  .mainDesktop {
+    margin: 7rem; }
+    .mainDesktop .divFalla7Pc {
+      margin-left: 24rem;
+      display: flex;
+      gap: 2rem; }
+      .mainDesktop .divFalla7Pc .textArea {
+        height: 14rem;
+        width: 20rem;
+        display: flex;
+        flex-direction: column; }
+      .mainDesktop .divFalla7Pc .botonNext {
+        height: 15rem;
+        width: 17rem; }
+    .mainDesktop .sectionFallasDesktop {
+      grid-template-areas: "divFalla1Pc divFalla2Pc divFalla3Pc divFalla4Pc divFalla5Pc divFalla6Pc";
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 2rem; }
+      .mainDesktop .sectionFallasDesktop div .imagenFallaDesktop {
+        width: 9rem;
+        height: 9rem;
+        margin-left: 1.5rem; } }
 
 /*+++++++++Estilos Footer Index Mobile+++++++++++*/
 footer {

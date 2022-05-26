@@ -31,7 +31,7 @@
         font-family: 'Fredoka One', sans-serif;
         grid-area: sectionPresentacion;
         box-sizing: border-box;
-        text-shadow: 2px 2px 3.5px #6af8bd;
+        text-shadow: 2px 2px 3.5px #ff5f5f;
         
         h1{
             font-size: 1.2rem;
@@ -43,7 +43,7 @@
         font-family: 'Fredoka One', sans-serif;
         font-size: 1.5rem;
         box-sizing: border-box;
-        text-shadow: 2px 2px 3.5px #6af8bd; 
+        text-shadow: 2px 2px 3.5px #ff5f5f; 
         padding-top: 6rem;
         padding-left: 1rem;
 
@@ -78,7 +78,7 @@
     font-family: 'Fredoka One', sans-serif;
     font-size: 1.5rem;
     box-sizing: border-box;
-    text-shadow: 2px 2px 3.5px #6af8bd;
+    text-shadow: 2px 2px 3.5px #ff5f5f;
     
 }
 
@@ -86,6 +86,7 @@
 
     .headerAire {
         grid-area: headerAire; 
+        margin: 1rem;
 
         .esquemaAire {
             
@@ -95,8 +96,7 @@
                 .subtituloAire {
                     color: $color-texto-secundario;
                     text-shadow: 3px 3px 7px $color-sombras-index;
-                    font-size: 1.5rem;  
-                    
+                    font-size: 1.5rem;      
                 }
 
                 .partesAire {
@@ -115,6 +115,7 @@
 
 .headerNotebook {
     grid-area: headerNotebook; 
+    margin: 1rem;
 
     .esquemaNotebook {
         
@@ -124,8 +125,7 @@
         .subtituloNotebook {
             color: $color-texto-secundario;
             text-shadow: 3px 3px 7px $color-sombras-notebook;
-            font-size: 1.5rem;
-                
+            font-size: 1.5rem;      
         }
 
         .partesNotebook {
@@ -142,31 +142,30 @@
 /*++++++++++++++ Estilos Header pcDesktop +++++++++++++++*/
 
 .headerDesktop {
-    grid-area: headerDesktop; 
+    grid-area: headerDesktop;
+    margin: 1rem; 
 
     .esquemaDesktop {
 
         @include esquemasHeaderDispositivos;
         box-shadow: 3px 2px 7px $color-sombras-cuadros-pcdesktop; 
         
+            .subtituloDesktop {
+                color: $color-texto-secundario;
+                text-shadow: 3px 3px 7px $color-sombras-pcdesktop;
+                font-size: 1.5rem;  
+            }
 
-        .subtituloDesktop {
-            color: $color-texto-secundario;
-            text-shadow: 3px 3px 7px $color-sombras-pcdesktop;
-            font-size: 1.5rem;
-                
-        }
+            .partesDesktop {
+                font-size: 0.9rem;
+            }
 
-        .partesDesktop {
-            font-size: 0.9rem;
-        }
-
-        .videoHeaderDesktop{
-            height: 9rem;
-            width: 16rem;
+            .videoHeaderDesktop{
+                height: 9rem;
+                width: 16rem;
+            }
         }
     }
-}
 
 
 /*++++++++++++ Estilos Header redesSociales +++++++++++++*/
@@ -179,7 +178,8 @@
     "row2"
     "row3"
     "row4";
-    text-shadow: 1px 1px 1px #ffffff; 
+    text-shadow: 1px 1px 1px #ffffff;
+    gap: 2rem; 
     
     
     .row1 {
@@ -199,21 +199,17 @@
     }
 
     .row2 {
-        
         grid-area: row2;
-        margin-top: 1rem;
         @extend .row1;    
     }
+
     .row3 {
-       
         grid-area: row3;
-        margin-top: 1rem;
         @extend .row1;      
     }
+
     .row4 {
-        
         grid-area: row4;
-        margin-top: 1rem;
         @extend .row1;    
     }
 
@@ -273,9 +269,110 @@
         }
     }
 
+    
+    /*++++++++ aireAcondicionado ++++++++++*/
+    
+    .headerAire {
+        margin: 2rem; 
+
+        .titulo-aireAcondicionado{
+            font-size: 3.5rem;
+        }
+        
+        .esquemaAire {
+               
+            .subtituloAire {
+                font-size: 2.5rem;  
+                padding-bottom: 1rem;
+                
+            }
+            
+            .partesAire {
+                font-size: 1.5rem;
+                
+            }
+            .videoHeaderAire{
+                padding-top: 1rem;
+                height: 20rem;
+                width: 30rem;
+            }
+            
+        }
+    }
+
+    /*++++++++ Notebook ++++++++++*/
+    
+    .headerNotebook {
+        margin: 2rem; 
+
+        .titulo-notebook{
+            font-size: 3.5rem;
+        }
+        
+        .esquemaNotebook {
+               
+            .subtituloNotebook {
+                font-size: 2.5rem;  
+                padding-bottom: 1rem;
+                
+            }
+            
+            .partesNotebook {
+                font-size: 1.5rem;
+                
+            }
+            .videoHeaderNotebook {
+                padding-top: 1rem;
+                height: 20rem;
+                width: 30rem;
+            }
+            
+        }
+    }
+
+    /*++++++++ pcDesktop ++++++++++*/
+    
+    .headerDesktop {
+        margin: 2rem; 
+
+        .titulo-pcDesktop{
+            font-size: 3.5rem;
+        }
+        
+        .esquemaDesktop {
+               
+            .subtituloDesktop {
+                font-size: 2.5rem;  
+                padding-bottom: 1rem;
+                
+            }
+            
+            .partesDesktop {
+                font-size: 1.5rem;
+                
+            }
+            .videoHeaderDesktop {
+                padding-top: 1rem;
+                height: 20rem;
+                width: 30rem;
+            }
+            
+        }
+    }
+
+/*++++++++++++ redesSociales +++++++++++++*/
+
+    .container {
+        padding: 1.5rem;
+        grid-template-areas: 
+        "row1 row2"
+        "row3 row4";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
 
-/*+-+-+-+-Estilos hasta 768px-+--+-+-+-*/
+/*+-+-+-+-Estilos hasta 1024px-+--+-+-+-*/
 
         /*++++Index++++*/
 
@@ -364,8 +461,12 @@
             }
         }
 
+
+ /*+-+-+-+-Estilos hasta 1750px-+--+-+-+-*/
+
 @media screen and (min-width: 1750px){
     
+/*++++++++++++++Index+++++++++++++*/
 
     .headerIndex{
         .sectionTecnico{
@@ -402,5 +503,29 @@
             font-size: 3rem;
         
         }
+    }
+
+/*++++++++ aireAcondicionado ++++++++++*/
+
+    .headerAire {
+        margin-left: 9rem;
+        margin-right: 9rem;
+
+    }
+
+/*++++++++ Notebook ++++++++++*/
+
+    .headerNotebook {
+        margin-left: 9rem;
+        margin-right: 9rem;
+
+    }
+
+/*++++++++ pcDesktop ++++++++++*/
+
+    .headerDesktop {
+        margin-left: 9rem;
+        margin-right: 9rem;
+
     }
 }
