@@ -16,7 +16,6 @@
     ;
     justify-content: center;
     flex-wrap: wrap;
-    
 
     .aireAcondicionado {
         grid-area: aireAcondicionado;    
@@ -47,7 +46,7 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin: 1.5rem;  
+    margin: 1rem;  
     background-image: linear-gradient(to right, #302f2f,#ccc9c9);
     box-shadow: 3px 3px 5px  #ffffff;  
 
@@ -58,9 +57,9 @@
     }
     
     .imagenes {
-        margin: 2rem;
-        height: 16rem;
-        width: 16rem;
+    
+        height: 14rem;
+        width: 14rem;
     }
 }
 
@@ -419,6 +418,38 @@
     }
 }
 
+/*+++++++++++++Estilos Main serviciosAiresAcondicionados++++++++++++++*/
+
+    .mainServiciosAires{
+        padding-bottom: 3rem;
+        section{
+            h3{
+                text-align: center;
+                color: $color-texto-gral;
+                font-size: 2rem;
+                text-shadow: $color-sombras-cuadros-aire 1px 1px 1px;
+                
+            }
+            div{
+            
+                display: grid;
+                justify-items: center;
+                border-radius: 50%;
+                background-image: linear-gradient(to right,#53ebffef, #fd6118d0);
+                box-shadow: 3px 2px 7px $color-sombras-index;
+                padding: 3rem;
+                margin: 2rem;
+                margin-top: 0px;
+
+                img{
+                    height: 9rem;
+                    width: 10rem;
+                }
+                
+            }
+        }
+    }
+
 
 
 
@@ -431,7 +462,6 @@
  /*++++++++Index+++++++++++++*/
         
     .mainIndex {
-        display: grid;
         grid-template-areas:
             "aireAcondicionado desktop"
             "notebook proximamente"
@@ -441,6 +471,7 @@
         justify-content: space-around;
         grid-template-columns: 5fr 5fr;
         grid-template-rows: 5fr 5fr;
+        gap: 2rem;
         
         .aireAcondicionado {
             grid-area: aireAcondicionado;           
@@ -649,11 +680,11 @@
         ;
         flex-direction: row;
         justify-content: space-around;
-        grid-template-columns: 5fr 5fr 5fr;
-        grid-template-rows: 5fr 5fr 5fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
 
         img{
-                transition: transform 0.5s;
+            transition: transform 0.5s;
             }
         img:hover{
             transform: scale(1.2) ;
@@ -754,7 +785,8 @@
 
     .mainIndex{
         .producto{
-            padding: 4rem 1rem 4rem 1rem;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
             
         }
     }
