@@ -218,6 +218,18 @@ nav {
   padding-left: 0.5rem;
   text-align: center; }
 
+@media screen and (min-width: 1024px) {
+  .headerServiciosAires h1 {
+    font-size: 4.5rem; }
+  .headerServiciosAires h2 {
+    font-size: 2.5rem; } }
+
+@media screen and (min-width: 1750px) {
+  .headerServiciosAires h1 {
+    font-size: 5.5rem; }
+  .headerServiciosAires h2 {
+    font-size: 3.5rem; } }
+
 /*-----------------Medias Queries-------------------*/
 /*+-+-+-+-Estilos hasta 768px-+--+-+-+-*/
 /*++++Index++++*/
@@ -403,7 +415,7 @@ body {
 /*++++++++++Estilos body aireAcondicionado++++++++++++*/
 .bodyAires {
   background-color: #000000;
-  background-image: url(../public/image/fondoAireAcondicionado2.png);
+  background-image: url(../public/image/aireAcondicionado/fondoAireAcondicionado2.png);
   background-repeat: repeat;
   background-size: 26rem;
   justify-content: center; }
@@ -411,7 +423,7 @@ body {
 /*+++++++++++++Estilos body notebook+++++++++++++++*/
 .bodyNotebook {
   background-color: #000000;
-  background-image: url(../public/image/fondoNotebook2.png);
+  background-image: url(../public/image/notebooks/fondoNotebook2.png);
   background-repeat: repeat;
   background-size: 26rem;
   justify-content: center; }
@@ -419,7 +431,7 @@ body {
 /*+++++++++++++Estilos body pcDesktop+++++++++++++++*/
 .bodyDesktop {
   background-color: #000000;
-  background-image: url(../public/image/fondoPcGamer.png);
+  background-image: url(../public/image/pcDesktop/fondoPcGamer.png);
   background-repeat: repeat;
   background-size: 26rem;
   justify-content: center; }
@@ -719,6 +731,66 @@ body {
     .mainServiciosAires section div img {
       height: 9rem;
       width: 10rem; }
+
+@media screen and (min-width: 375px) {
+  .mainServiciosAires section div {
+    padding: 3.6rem;
+    margin-top: 0px; }
+    .mainServiciosAires section div img {
+      height: 11rem;
+      width: 10rem; } }
+
+@media screen and (min-width: 425px) {
+  .mainServiciosAires section div {
+    padding: 3rem;
+    margin: 4.5rem;
+    margin-top: 0px; } }
+
+@media screen and (min-width: 768px) {
+  .mainServiciosAires {
+    display: grid;
+    grid-template-areas: "sectionInstalacion sectionMantenimiento" "sectionReparacion sectionReparacion"; }
+    .mainServiciosAires .sectionInstalacion {
+      grid-area: sectionInstalacion;
+      margin-left: auto;
+      margin-right: auto; }
+    .mainServiciosAires .sectionMantenimiento {
+      grid-area: sectionMantenimiento;
+      margin-left: auto;
+      margin-right: auto; }
+    .mainServiciosAires .sectionReparacion {
+      grid-area: sectionReparacion;
+      margin-left: auto;
+      margin-right: auto; } }
+
+@media screen and (min-width: 1024px) {
+  .mainServiciosAires {
+    display: grid;
+    grid-template-areas: "sectionInstalacion sectionMantenimiento sectionReparacion"; }
+    .mainServiciosAires .sectionInstalacion {
+      grid-area: sectionInstalacion; }
+    .mainServiciosAires .sectionMantenimiento {
+      grid-area: sectionMantenimiento; }
+    .mainServiciosAires .sectionReparacion {
+      grid-area: sectionReparacion; } }
+
+@media screen and (min-width: 1440px) {
+  .mainServiciosAires section {
+    margin: 2rem; }
+    .mainServiciosAires section div img {
+      height: 16rem;
+      width: 14rem; } }
+
+@media screen and (min-width: 1750px) {
+  .mainServiciosAires section {
+    margin: 3.5rem; }
+    .mainServiciosAires section div img {
+      height: 19rem;
+      width: 17rem; } }
+
+@media screen and (min-width: 1750px) {
+  .mainServiciosAires section {
+    padding: 3.9rem; } }
 
 /*-------------------------------Medias Queries----------------------------*/
 /*+-+-+-+-Estilos hasta 768px-+--+-+-+-*/

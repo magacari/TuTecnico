@@ -450,9 +450,118 @@
         }
     }
 
+    @media screen and (min-width: 375px) {
+        .mainServiciosAires{
+            section{
+                div{
+                
+                    padding: 3.6rem;
+                    margin-top: 0px;
+
+                    img{
+                        height: 11rem;
+                        width: 10rem;
+                    } 
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 425px) {
+        .mainServiciosAires{
+            section{
+                div{
+                    padding: 3rem;
+                    margin: 4.5rem;
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .mainServiciosAires{
+            display: grid;
+            grid-template-areas: 
+            "sectionInstalacion sectionMantenimiento"
+            "sectionReparacion sectionReparacion";
+
+            .sectionInstalacion{
+                grid-area: sectionInstalacion;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .sectionMantenimiento{
+                grid-area: sectionMantenimiento;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .sectionReparacion{
+                grid-area: sectionReparacion;
+                margin-left: auto;
+                margin-right: auto;
+            }             
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .mainServiciosAires{
+            display: grid;
+            grid-template-areas: 
+            "sectionInstalacion sectionMantenimiento sectionReparacion";
+
+            .sectionInstalacion{
+                grid-area: sectionInstalacion;
+            }
+            .sectionMantenimiento{
+                grid-area: sectionMantenimiento;
+            }
+            .sectionReparacion{
+                grid-area: sectionReparacion;
+               
+            }             
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        .mainServiciosAires{
+            section{
+                margin: 2rem;
+                div{
+                    img{
+                        height: 16rem;
+                        width: 14rem;
+                    } 
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1750px) {
+        .mainServiciosAires{
+            section{
+                margin: 3.5rem;
+                div{
+                    img{
+                        height: 19rem;
+                        width: 17rem;
+                    } 
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1750px) {
+        .mainServiciosAires{
+            section{
+                padding: 3.9rem;
+                
+            }
+        }
+    }
 
 
-
+    
 /*-------------------------------Medias Queries----------------------------*/
 
     /*+-+-+-+-Estilos hasta 768px-+--+-+-+-*/
